@@ -1,0 +1,17 @@
+eg-css:  
+    css:
+      base:
+        css/base/styles.css: {}
+      layout:
+        css/layout/layout.css: {}
+      component:
+        css/components/menu.css: {}
+        css/components/button.css: {}
+        css/components/views.css: {}
+      
+quicksand:  
+  css:
+    theme:
+      //fonts.googleapis.com/css?family=Quicksand: { type: external }
+      css/styles.css: {}
+

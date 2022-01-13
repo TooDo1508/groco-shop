@@ -1,0 +1,62 @@
+.paragraph--type--customer{
+    text-align: center;
+    margin: 2rem 6%;
+}
+
+.paragraph--type--customer .field--name-field-title-customer{
+    font-size: 3rem;
+    background: var(--orange);  
+    color: #fff; 
+    display: inline-block;
+    padding:.5rem 3rem;
+    margin: 2rem 0;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+
+.paragraph--type--customer .field--name-field-paragraph-customer{
+    /* background: red; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap:1.5rem
+}
+
+.paragraph--type--customer-content{
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    padding: 3rem 2rem;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    transition: .2s linear;
+}
+
+.paragraph--type--customer-content:hover{
+    outline:var(--outline-hover);
+    outline-offset: 0rem;
+}
+
+.paragraph--type--customer-content img{
+    height: 17rem;
+    width: 17rem;
+    border-radius: 50%;
+}
+
+.paragraph--type--customer-content .field--type-string-long{
+    font-size: 1.3rem;
+    color: var(--light-color);
+    padding: 1.3rem 0;
+
+}
+
+.paragraph--type--customer-content .field--name-field-name-customer{
+    color: var(--black);
+    font-size: 2.3rem;
+    font-weight: bold;
+    padding: 0.3rem 0;
+    
+}
+
+.paragraph--type--customer-content .field--name-field-star-customer{
+    color: var(--orange);
+    font-size: 1.4rem;
+    padding-top: 0.7rem;
+}

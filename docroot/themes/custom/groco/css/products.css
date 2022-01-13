@@ -1,0 +1,68 @@
+.paragraph--type--products{
+    text-align: center;
+    margin: 2rem 6%;
+}
+.paragraph--type--products .field--name-field-title-product{
+    font-size: 3rem;
+    background: var(--orange);  
+    color: #fff; 
+    display: inline-block;
+    padding:.5rem 3rem;
+    margin: 2rem 0;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+
+/* .paragraph--type--products .view-our-products{
+
+} */
+
+.views-col{
+    border-radius: .2rem;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    padding: 3rem 2rem;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    transition: .2s linear;
+    margin: 1rem 1rem;
+}
+
+.views-col:hover{
+    outline:var(--outline-hover);
+    outline-offset: 0rem;
+}
+
+.views-col .view-field-field-img-product img{
+    height: 15rem;
+}
+
+.paragraph--type--products .views-field-field-name-product{
+    font-size: 2.4rem;
+    color: var(--black);
+    font-weight: bold;
+}
+
+
+.paragraph--type--products .views-field-field-btn-products a{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border:.2rem solid var(--black);
+    color:var(--black);
+    cursor: pointer;
+    background: none;
+}
+
+
+.paragraph--type--products .views-field-field-price-product{
+    font-size: 1.8rem;
+    color: var(--light-color);
+    padding: 1.2rem 0;
+}
+
+.paragraph--type--products .views-field-field-btn-products a:hover{
+    background: var(--orange);
+    color:#fff;
+}

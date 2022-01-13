@@ -1,0 +1,98 @@
+.paragraph--type--blogs{
+    text-align: center;
+    margin: 2rem 6%;
+}
+
+.paragraph--type--blogs .field--name-field-title-blogs{
+    font-size: 3rem;
+    background: var(--orange);  
+    color: #fff; 
+    display: inline-block;
+    padding:.5rem 3rem;
+    margin: 2rem 0;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+
+.paragraph--type--blogs .view-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(24rem,1fr));
+    /* grid-template-columns: auto auto auto auto;     */
+    gap:1.5rem;
+}
+
+
+.paragraph--type--blogs  .view-content .views-row{
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    padding: 3rem 2rem;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    transition: .2s linear;
+    border-radius: .5rem;
+}
+
+.paragraph--type--blogs  .view-content .views-row:hover{
+    outline:var(--outline-hover);
+    outline-offset: 0rem;
+}
+
+.paragraph--type--blogs .views-field-field-img-blog img{
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.paragraph--type--blogs .views-field-uid{
+    float: left;
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+    color: var(--black);
+}
+
+.paragraph--type--blogs .views-field-created{
+    text-align: right;
+    margin: 0 2rem;
+    border-bottom: var(--border);
+    padding: 1rem 0;
+    font-size: 1.3rem;
+    color: var(--black);
+    
+}
+
+.paragraph--type--blogs .views-field-field-title-blog{
+    color: var(--black);
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: left;
+    padding: 0 2rem;
+    padding-top: 0.8rem;
+}
+
+
+.paragraph--type--blogs .views-field-field-descrip-blog{
+    color: var(--light-color);
+    font-size: 1.4rem;
+    text-align: left;
+    padding: 0.8rem 2rem;
+}
+
+.paragraph--type--blogs .views-field-field-btn-blog a{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border:.2rem solid var(--black);
+    color:var(--black);
+    cursor: pointer;
+    background: none;
+    margin-left: 2rem;
+    float: left;
+}
+.paragraph--type--blogs .views-field-field-btn-blog a:hover{
+    background: var(--orange);
+    color:#fff;
+}
+
+
+

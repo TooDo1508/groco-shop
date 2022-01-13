@@ -1,0 +1,35 @@
+
+
+/* .menu--main{
+    
+} */
+
+
+
+.menu--main .menu{
+    display: flex;
+    justify-content: center;
+    box-shadow: var(--box-shadow);
+    height: 6rem;
+    align-items: center;
+    margin-left: -1rem;
+    
+}
+
+ul.menu{
+    margin-left: 0rem;
+}
+.menu--main .menu li a{
+    font-size: 1.8rem;
+    padding: 0 1.2rem;
+    color: var(--black);
+    cursor: pointer;
+
+}
+
+.menu--main .menu li a:hover{
+    color: var(--orange);
+}
+
+
+

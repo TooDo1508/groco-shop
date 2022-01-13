@@ -1,0 +1,76 @@
+
+.paragraph--type--features{
+    text-align: center;
+    margin: 2rem 6%;
+}
+.paragraph--type--features .field--name-field-title-features{
+    font-size: 3rem;
+    background: var(--orange);  
+    color: #fff; 
+    display: inline-block;
+    padding:.5rem 3rem;
+    margin: 2rem 0;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+
+.paragraph--type--features .field--name-field-paragraph{
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(32rem,1fr));
+   /* grid-template-columns: auto auto auto; */
+   gap:1.5rem
+}
+
+
+.paragraph--type--features-content{
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    padding: 3rem 2rem;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    transition: .2s linear;
+}
+
+.paragraph--type--features-content:hover{
+    outline:var(--outline-hover);
+    outline-offset: 0rem;
+}
+
+.paragraph--type--features-content img{
+    height: 12rem;
+    padding: .3rem 0;
+}
+
+.paragraph--type--features-content .field--type-string{
+    font-size: 2.4rem;
+    color: var(--black);
+    font-weight: bold;
+}
+
+
+.paragraph--type--features-content .field--type-string-long{
+    font-size: 1.3rem;
+    color: var(--light-color);
+    padding: 1.3rem;
+    line-height: 1.4rem;
+
+}
+
+.paragraph--type--features-content .field--type-link a{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border:.2rem solid var(--black);
+    color:var(--black);
+    cursor: pointer;
+    background: none;
+
+}
+
+.paragraph--type--features-content .field--type-link a:hover{
+    background: var(--orange);
+    color:#fff;
+}
+
+

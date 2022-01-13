@@ -1,0 +1,22 @@
+global-styling:
+  version: 1.0
+  css:
+    theme:
+      # css/bootstrap.css: {}
+      css/style.css: {}
+      css/menu.css: {}
+      css/features.css: {}
+      css/banner.css: {}
+      # css/products.css: {}
+      css/products2.css: {}
+      css/categories.css: {}
+      css/customer.css: {}
+      css/blogs.css: {}
+      https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css: { type: external, minified: true }
+    
+  dependencies:
+    - core/jquery
+    - core/jquery.ui.effects.core
+  js:    
+    js/script.js: {}
+    https://unpkg.com/swiper@7/swiper-bundle.min.js: { type: external, minified: true }

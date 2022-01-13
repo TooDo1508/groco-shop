@@ -5,3 +5,7 @@
 docker-compose.yml
 docroot/sites/*/settings.local.php
 docroot/sites/*/files
+vendor/
+docroot/vendor/*
+docroot/modules/contrib
+docroot/themes/contrib

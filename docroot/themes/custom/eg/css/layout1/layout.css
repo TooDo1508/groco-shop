@@ -1,0 +1,89 @@
+/*Import Custom Styles */
+
+/**************************** Site Structure *****************************/
+
+.layout-container {
+	font-size: 1em;
+	max-width:960px;
+	border-radius: 5px;
+	margin: auto;
+	position: relative;
+	clear: both
+}
+.region-header {
+  max-width: 960px;
+  margin: 0px;
+  height: 150px;
+
+}
+
+.region-header .block{
+  float: left;
+  margin-right:30px;
+}
+.site-logo {
+  /* float: left; */
+  padding-top: 35px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  clear:both;
+  }
+
+.site-logo img {
+  float: left;
+  width: 144px;
+  height: 90px;
+}
+.path-services .region-content {
+  float: left;
+  width: 100%;
+  position: relative;
+} 
+.path-blog .region-content {
+  float: left;
+  width: 74%;
+  position: relative;
+} 
+.path-blog .field-content img{
+  height: 150px;
+}
+/* ------------------ Sidebar ----------------- */
+
+
+.reigon-highlighted{
+    float: left; 
+    width: 25%;
+    margin-right:30px;
+    position: relative;
+}
+
+.region-sidebar-second {
+  float: right; 
+  width: 22%;
+  position: relative;
+  padding: 10px 15px 0; 
+}
+.region-sidebar-first {
+  float: left; 
+  width: 25%;
+  margin-right:30px;
+  position: relative;
+  padding: 10px 15px 0;
+}
+
+.sidebar .block {
+  border-style: solid;
+  border-width: 1px;
+  padding: 15px 20px;
+  margin: 0 0 20px;
+  background-color: red;
+} 
+
+
+.front .region-front .block{
+  float:left; 
+  margin-right:30px;
+  background-color: burlywood;
+  width: 30%;
+  margin-bottom: 60px;
+}

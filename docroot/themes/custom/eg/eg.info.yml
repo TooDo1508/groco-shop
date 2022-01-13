@@ -1,0 +1,23 @@
+name: Elegenat Gardens
+type: theme
+descripton: Fresh Green Theme for EG
+core_version_requirement: ^8 || ^9
+base theme: classy
+screenshot: screenshot.png
+
+libraries:
+  - eg/eg-css
+  - eg/quicksand
+  - core/normalize
+
+regions:
+  header: Header
+  highlighted: Highlighted
+  help: Help
+  content: Content
+  sidebar_first: Left Sidebar
+  sidebar_second: Right Sidebar
+  front: Front Page BLocks
+  footer: Footer
+  page_top: Page top
+  page_bottom: Page bottom
