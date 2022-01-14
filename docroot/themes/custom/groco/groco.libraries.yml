@@ -12,6 +12,7 @@ global-styling:
       css/categories.css: {}
       css/customer.css: {}
       css/blogs.css: {}
+      css/footer.css: {}
       https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css: { type: external, minified: true }
     
   dependencies:

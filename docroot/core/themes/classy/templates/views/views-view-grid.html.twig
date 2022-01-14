@@ -55,22 +55,28 @@
   {% if options.alignment == 'horizontal' %}
     {% for row in items %}
       <div{{ row.attributes.addClass(row_classes, options.row_class_default ? 'row-' ~ loop.index) }}>
+      <div class="swiper-wrapper">
         {% for column in row.content %}
           <div{{ column.attributes.addClass(col_classes, options.col_class_default ? 'col-' ~ loop.index) }}>
             {{- column.content -}}
           </div>
         {% endfor %}
       </div>
+      </div>
     {% endfor %}
   {% else %}
     {% for column in items %}
       <div{{ column.attributes.addClass(col_classes, options.col_class_default ? 'col-' ~ loop.index) }}>
+      
         {% for row in column.content %}
           <div{{ row.attributes.addClass(row_classes, options.row_class_default ? 'row-' ~ loop.index) }}>
             {{- row.content -}}
           </div>
         {% endfor %}
-      </div>
+        </div>
+      
     {% endfor %}
   {% endif %}
 </div>
+
+

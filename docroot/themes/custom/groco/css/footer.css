@@ -1,0 +1,93 @@
+
+.region-footer{
+    padding: 2rem 6%;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    gap:1.5rem;
+    background-color: #fff;
+}
+
+.region-footer h2{
+    font-size: 2.4rem;
+    color: var(--black);
+    margin-bottom: 2.2rem;
+}
+.region-footer #block-groco-2  p{
+    font-size: 1.2rem;
+    color: var(--light-color);
+    padding-bottom: 0.8rem;
+}
+
+.region-footer #block-groco-2 .fontawesome-icon-inline{
+    color: var(--black);
+
+}
+
+.region-footer #block-groco-2 .fontawesome-icon-inline i{
+    font-size: 1.5rem;
+    height: 4rem;
+    width: 4rem;
+    border-radius: .5rem;
+    color: var(--black);
+    line-height: 4rem;
+    background-color: rgb(226, 225, 225);
+    margin-left: .2rem;
+    text-align: center;
+}
+/* groco footer */
+
+.region-footer #block-groco-2 .fontawesome-icon-inline i:hover{
+    color: #fff;
+    background-color: var(--orange);
+}
+
+/* contactinfo */
+
+.region-footer #block-contactinfo p{
+    font-size: 1.2rem;
+    color: var(--light-color);
+    padding-bottom: 2.2rem;
+}
+
+.region-footer #block-contactinfo .fontawesome-icon-inline i{
+    color: var(--orange);
+    padding-left: 0.4rem;
+}
+
+.region-footer #block-contactinfo .fontawesome-icon-inline a{
+    color: var(--light-color);
+    
+}
+
+.region-footer #block-contactinfo .fontawesome-icon-inline:hover i{
+    padding-right: 0.4rem;
+}
+
+/*  quicklink */
+
+.region-footer #block-quicklinks p{
+    font-size: 1.2rem;
+    color: var(--light-color);
+    padding-bottom: 2.2rem;
+}
+
+.region-footer #block-quicklinks .fontawesome-icon-inline i{
+    color: var(--orange);
+    padding-left: 0.4rem;
+}
+
+.region-footer #block-quicklinks .fontawesome-icon-inline a{
+    color: var(--light-color);
+}
+
+.region-footer #block-quicklinks .fontawesome-icon-inline a:hover{
+    color: var(--orange);
+
+}
+
+.region-footer #block-quicklinks .fontawesome-icon-inline:hover i {
+    color: var(--orange);
+    padding-right: 0.4rem;
+}
+
