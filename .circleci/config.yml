@@ -1,13 +1,209 @@
-# This is a temporary dummy config to stop CircleCI from building this branch with automatic v1.0 configuration for PHP
+init: &init
+  docker:
+    - image: circleci/php:7.4
+  working_directory: ~/build
+
+run-envvars: &run-envvars
+  name: Configuring build environment
+  command: |
+    echo "PANTHEON_GIT_URL=$PANTHEON_GIT_URL" >> $BASH_ENV
+    echo "PR_NUMBER=${CI_PULL_REQUEST##*/}" >> $BASH_ENV && source $BASH_ENV
+    echo 'TERMINUS_ENV=pr-$PR_NUMBER' >> $BASH_ENV
+    echo "NOTIFY='scripts/github/add-commit-comment {project} {sha} \"Created multidev environment [{site}#{env}]({dashboard-url}).\" {site-url}'" >> $BASH_ENV
+    echo "PATH=$PATH:~/bin:tests/scripts" >> $BASH_ENV && source $BASH_ENV
+
+git-config: &git-config
+  name: Git configuration
+  command: |
+    if [ ! -d "$HOME/.ssh" ]; then
+      mkdir $HOME/.ssh
+    fi
+    echo 'StrictHostKeyChecking no' > ~/.ssh/config
+    echo "Begin build for $CIRCLE_ENV${PR_ENV:+ for }$PR_ENV. Pantheon test environment is $PANTHEON_SITE.$TERMINUS_ENV"
+    if [ -n "$GITHUB_TOKEN" ] ; then
+     composer -n config --global github-oauth.github.com $GITHUB_TOKEN
+    fi
+    git config --global user.email "$GIT_EMAIL"
+    git config --global user.name "Circle CI"
+    git config --global core.fileMode false
+
+run-sandbox: &run-sandbox
+  name: Sandbox provisioning
+  command: |
+    echo 'export PATH=$HOME/.composer/vendor/bin:$PATH' >> $BASH_ENV && source $BASH_ENV
+    terminus -n auth:login --machine-token="$PANTHEON_MACHINE_TOKEN"
+    terminus env:wake -n "$PANTHEON_SITE.dev"
+
+    PANTHEON_ENVS="$(terminus multidev:list $PANTHEON_SITE_UUID --format=list --field=Name)"
+    MULTIDEV_FOUND=0
+    while read -r line; do
+      if [[ "${line}" == "${TERMINUS_ENV}" ]]
+      then
+        MULTIDEV_FOUND=1
+      fi
+    done <<< "$PANTHEON_ENVS"
+
+    if [[ "$MULTIDEV_FOUND" -eq 1 ]]
+    then
+      # Send a message
+      echo -e "\n${txtylw}Multidev found! ${txtrst}"
+      terminus build:env:push "$PANTHEON_SITE.$TERMINUS_ENV"
+    else
+      # otherwise, create the multidev branch
+      echo -e "\n${txtylw}Multidev not found, creating the multidev branch ${TERMINUS_ENV} via Terminus ${txtrst}"
+      terminus build:env:create -n "$PANTHEON_SITE.dev" "$TERMINUS_ENV" --yes --clone-content --notify="$NOTIFY"
+    fi
+
+    if [ -n "${SLACK_HOOK_URL+1}" ]
+    then
+      echo -e "\n${txtylw}Create/Update the secret Webhook URL into a file called secrets.json ${txtrst}"
+      echo "{\"slack_url\": \"$SLACK_HOOK_URL\"}" > secrets.json
+    fi
+  no_output_timeout: 900
 
 version: 2
 jobs:
-  build:
-    docker:
-      - image: alpine
-    # Ignore all branches
-    branches:
-      ignore:
-        - /.*/
+  code-sniffers:
+    <<: *init
     steps:
-      - run: echo 'Hello World'
+      - run:
+          <<: *run-envvars
+      - run:
+          <<: *git-config
+      - checkout
+      - run:
+          name: Install Code Sniffers
+          command: |
+            echo -e "Installing Coder Sniffer...\n"
+            ./scripts/install_coder_sniffer.sh
+      - run:
+          name: Running PHP Codesniffer
+          command: |
+            echo -e "Running Code Sniffer check...\n"
+            ./scripts/phpcs.sh
+
+  build:
+    <<: *init
+    steps:
+      - checkout
+      - run:
+          <<: *run-envvars
+      - run:
+          <<: *git-config
+      - restore_cache:
+          keys:
+            - composer-terminus-cache
+      - run: sudo apt-get update && sudo apt-get install -y libpng-dev
+      - run:
+          name: Disable PHP memory limit
+          command: echo 'memory_limit=-1' | sudo tee -a /usr/local/etc/php/php.ini
+      - run:
+          name: Install PHP Extensions
+          command: sudo docker-php-ext-install gd
+      - run:
+          name: Install terminus build tools plugin
+          command: |
+            composer -n global require "hirak/prestissimo:^0.3"
+            composer -n global require pantheon-systems/terminus "^1"
+            echo 'export PATH=$HOME/.composer/vendor/bin:$PATH' >> $BASH_ENV
+            mkdir -p ~/.terminus/plugins
+            composer -n create-project -d ~/.terminus/plugins pantheon-systems/terminus-build-tools-plugin:2.0.0-beta2
+            composer -n create-project -d ~/.terminus/plugins pantheon-systems/terminus-secrets-plugin:^1
+            echo "{\"slack_url\": \"$SLACK_HOOK_URL\"}" > secrets.json
+      - run:
+          name: Run composer install
+          command: |
+            composer install --no-ansi --no-dev --no-interaction --optimize-autoloader --no-progress
+      - save_cache:
+          key: composer-terminus-cache
+          paths:
+              - $HOME/.composer/cache
+              - $HOME/.terminus/plugins
+      - save_cache:
+          key: build-cache-{{ .Environment.CIRCLE_SHA1 }}
+          paths:
+            - ~/.terminus
+            - ~/build
+            - ~/.composer
+
+  sandbox:
+    <<: *init
+    steps:
+      - run:
+          <<: *run-envvars
+      - run:
+          <<: *git-config
+      - restore_cache:
+          keys:
+            - build-cache-{{ .Environment.CIRCLE_SHA1 }}
+      - restore_cache:
+          keys:
+            - composer-terminus-cache
+      - run:
+          <<: *run-sandbox
+
+  deploy:
+    <<: *init
+    steps:
+      - run:
+          <<: *run-envvars
+      - run:
+          <<: *git-config
+      - restore_cache:
+          keys:
+            - build-cache-{{ .Environment.CIRCLE_SHA1 }}
+      - restore_cache:
+          keys:
+            - composer-terminus-cache
+      - run: sudo apt-get update && sudo apt-get install -y rsync
+      - run:
+          name: Push code to Pantheon dev
+          command: |
+            COMMIT_MESSAGE="$(git log -1 --pretty=%B)"
+            cd $HOME
+            mkdir $HOME/pantheon
+            git clone $PANTHEON_GIT_URL pantheon
+            cd $HOME/pantheon
+            git fetch
+            git pull origin master
+            rm -rf $HOME/build/web/sites/default/files
+            rsync -ar --delete --exclude '.git' $HOME/build/ $HOME/pantheon
+            rm -f $HOME/pantheon/web/sites/default/settings.local.php
+            git checkout $HOME/pantheon/web/sites/default/files
+            git add -A --force .
+            echo "**************************"
+            echo $COMMIT_MESSAGE
+            echo "**************************"
+            git commit -m "Circle CI build $CIRCLE_BUILD_NUM by CircleCI Bot" -m "$COMMIT_MESSAGE"
+            git push -u origin master
+      - run:
+          name: Delete Merged PRs
+          command: |
+            echo 'export PATH=$HOME/.composer/vendor/bin:$PATH' >> $BASH_ENV && source $BASH_ENV
+            terminus -n auth:login --machine-token="$PANTHEON_MACHINE_TOKEN"
+            terminus -n build:env:delete:pr "$PANTHEON_SITE" --yes
+
+workflows:
+  version: 2
+  default-workflow:
+    jobs:
+      - code-sniffers:
+          filters:
+            branches:
+              ignore:
+                - master
+      - build
+      - sandbox:
+          requires:
+            - build
+          filters:
+            branches:
+              ignore:
+                - master
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only:
+                - master
