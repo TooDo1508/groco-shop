@@ -103,6 +103,7 @@ jobs:
       - run:
           name: Install terminus build tools plugin
           command: |
+            composer self-update --1
             composer -n global require "hirak/prestissimo:^0.3"
             composer -n global require pantheon-systems/terminus "^1"
             echo 'export PATH=$HOME/.composer/vendor/bin:$PATH' >> $BASH_ENV
