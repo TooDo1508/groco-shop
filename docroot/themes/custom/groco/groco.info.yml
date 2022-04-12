@@ -12,8 +12,10 @@ regions:
   secondary_menu: 'Secondary menu'
   page_top: 'Page top'
   page_bottom: 'Page bottom'
-  highlighted: Highlighted
+  content: 'Content'
   featured_top: 'Featured top'
   breadcrumb: Breadcrumb
-  content: 'Content'
+  sidebar_first: Left Sidebar
+  highlighted: 'Highlighted'
+  advertisment: 'Advertisment'
   footer: 'Footer'

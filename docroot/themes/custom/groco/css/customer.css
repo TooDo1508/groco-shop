@@ -1,6 +1,9 @@
 .paragraph--type--customer{
     text-align: center;
-    margin: 2rem 6%;
+    /* margin: 2rem 6%; */
+    width: 88%;
+    max-width: 1900px;
+    margin: 2rem auto;
 }
 
 .paragraph--type--customer .field--name-field-title-customer{
@@ -27,6 +30,7 @@
     outline: var(--outline);
     outline-offset: -1rem;
     transition: .2s linear;
+    border-radius: .5rem;
 }
 
 .paragraph--type--customer-content:hover{
@@ -40,7 +44,7 @@
     border-radius: 50%;
 }
 
-.paragraph--type--customer-content .field--type-string-long{
+.paragraph--type--customer-content .field--name-field-content-customer{
     font-size: 1.3rem;
     color: var(--light-color);
     padding: 1.3rem 0;

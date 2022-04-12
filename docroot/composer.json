@@ -16,7 +16,7 @@
     ],
     "require": {
         "composer/installers": "^1.2",
-        "drupal/admin_toolbar": "^3.0",
+        "drupal/admin_toolbar": "^3.1",
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
@@ -24,6 +24,7 @@
         "drupal/devel": "^4.1",
         "drupal/fontawesome": "^2.19",
         "drupal/paragraphs": "^1.12",
+        "drupal/viewfield": "^3.0@beta",
         "drupal/views_field_formatter": "^1.13",
         "drupal/yg_restaurant_lite": "^1.0"
     },

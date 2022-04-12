@@ -1,6 +1,9 @@
 .paragraph--type--products{
     text-align: center;
-    margin: 2rem 6%;
+    /* margin: 2rem 6%; */
+    width: 88%;
+    max-width: 1900px;
+    margin: 2rem auto;
 }
 .paragraph--type--products .field--name-field-title-product{
     font-size: 3rem;
@@ -16,7 +19,8 @@
 
 } */
 
-.views-col{
+.views-view-grid .views-col{
+    width: 30%;
     border-radius: .2rem;
     background: #fff;
     box-shadow: var(--box-shadow);
@@ -24,7 +28,7 @@
     outline: var(--outline);
     outline-offset: -1rem;
     transition: .2s linear;
-    margin: 1rem 1rem;
+    margin: 1rem 0rem;    
 }
 
 .views-col:hover{
@@ -33,7 +37,7 @@
 }
 
 .views-col .view-field-field-img-product img{
-    height: 15rem;
+    height: 10rem;
 }
 
 .paragraph--type--products .views-field-field-name-product{

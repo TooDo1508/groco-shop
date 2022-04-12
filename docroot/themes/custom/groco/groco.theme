@@ -6,7 +6,7 @@
  */
 
 function groco_preprocess_page(array &$variables) {
-    print 'blah123';
+    
 }
 
 function groco_preprocess_field__paragraph__field_link_footer__link_footer(&$vars) {

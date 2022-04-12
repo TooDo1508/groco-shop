@@ -1,7 +1,10 @@
 .paragraph--type--categories{
     text-align: center;
-    margin: 2rem 6%;
+    /* margin: 2rem 6%; */
     /* background-color: red; */
+    width: 88%;
+    max-width: 1900px;
+    margin: 2rem auto;
 }
 
 .paragraph--type--categories .field--name-field-title-categories{
@@ -59,13 +62,13 @@
 }
 
 
-.views-field-field-saleoff-categoires{
+.views-field-field-s{
     font-size: 1.3rem;
     color: var(--light-color);
     padding: 1.2rem;
 }
 
-.views-field-field-btn-ca a{
+.views-field-field-btn a{
     margin-top: 1rem;
     display: inline-block;
     padding:.8rem 3rem;
@@ -75,9 +78,9 @@
     color:var(--black);
     cursor: pointer;
     background: none;
-
+    
 }
-.views-field-field-btn-ca a:hover{
+.views-field-field-btn a:hover{
     background: var(--orange);
     color:#fff;
 } 

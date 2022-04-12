@@ -41,7 +41,10 @@ a{
     cursor: pointer;
     background: none;
 }
-
+.clearfix::after{
+    display: table;
+    clear: both;
+}
 
 
 

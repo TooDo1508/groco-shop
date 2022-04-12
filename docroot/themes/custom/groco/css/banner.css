@@ -1,11 +1,21 @@
-
+.region-content{
+    /* margin: 2rem 6%; */
+    margin: 0 auto;
+    max-width: 2400px;
+}
 
 .paragraph--type--banner{
     /* background-color: rgb(160, 129, 129); */
     align-items: center;
     text-align: center;   
     height: 30rem; 
+    /* width: 100%; */
+    /* max-width: 2900px; */
+    margin: 0 auto;
+
+    max-width: 4000px;
 }
+
 
 .paragraph--type--banner .field--type-image img{
     
@@ -25,7 +35,9 @@
     
 } 
 
-.paragraph--type--banner .field--type-string-long{
+
+
+.paragraph--type--banner .field--name-field-content-banner{
     color: var(--light-color);
     font-size: 1.7rem;
     padding: 2rem 0;

@@ -1,0 +1,76 @@
+
+.node--type-shop{
+    width: 66%;
+    background-color: #fff;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    margin: 2rem 6%;
+    /* margin-left:6%; */
+    /* background-color: red; */
+    max-width: 1900px;
+}
+
+.node--type-shop .header-shop{
+    padding: 2rem 0;
+    margin: 2rem 2%;
+    display: flex;
+    border-bottom:var(--border);
+}
+.node--type-shop .field--name-field-logo-shop{   
+
+}
+
+
+
+.node--type-shop .field--name-field-name-shop{    
+    color: var(--black);    
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 2rem;
+    
+}
+
+
+.node--type-shop .box{
+    display: flex;
+    margin: 2rem 2%; 
+}
+
+
+.node--type-shop .box i{
+    color: var(--orange);
+    padding-top: .1rem;
+    font-size: 1.7rem;
+    margin-right: 1.2rem;
+}
+
+.node--type-shop .box p{
+    color: rgb(182, 109, 15);
+    font-size: 1.8rem;
+    text-align: center;
+    align-items: center;
+}
+
+.node--type-shop .field--name-field-intr{
+    font-size: 1.5rem;
+    margin: 2rem 2%;
+    color: #666;
+    line-height:2.4rem;
+    /* color: var(--black); */
+}
+
+
+.node--type-shop .field--name-field-img-shop img{
+    height: 40rem;
+    width: 40rem;
+    object-fit: cover;
+}
+
+.node--type-shop .field--name-field-info-shop{
+    font-size: 1.5rem;
+    color: #666;
+    line-height:2.4rem;
+    /* color: var(--black); */
+    margin-left: 1rem;
+}

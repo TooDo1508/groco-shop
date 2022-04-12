@@ -13,19 +13,23 @@
     color: var(--black);
     margin-bottom: 2.2rem;
 }
-.region-footer #block-groco-2  p{
-    font-size: 1.2rem;
+.region-footer #block-groco p{
+    font-size: 1.1rem;
     color: var(--light-color);
-    padding-bottom: 0.8rem;
+    padding-bottom: 1.1rem;
+}
+.region-footer #block-groco {
+    display: inline;
 }
 
-.region-footer #block-groco-2 .fontawesome-icon-inline{
+.region-footer #block-groco .fontawesome-icon-inline{
     color: var(--black);
 
+   
 }
 
-.region-footer #block-groco-2 .fontawesome-icon-inline i{
-    font-size: 1.5rem;
+.region-footer #block-groco .fontawesome-icon-inline i{
+    font-size: 1.9rem;
     height: 4rem;
     width: 4rem;
     border-radius: .5rem;
@@ -35,32 +39,33 @@
     margin-left: .2rem;
     text-align: center;
 }
+
 /* groco footer */
 
-.region-footer #block-groco-2 .fontawesome-icon-inline i:hover{
+.region-footer #block-groco .fontawesome-icon-inline i:hover{
     color: #fff;
     background-color: var(--orange);
 }
 
 /* contactinfo */
 
-.region-footer #block-contactinfo p{
+.region-footer #block-contactinfo-2 p{
     font-size: 1.2rem;
     color: var(--light-color);
     padding-bottom: 2.2rem;
 }
 
-.region-footer #block-contactinfo .fontawesome-icon-inline i{
+.region-footer #block-contactinfo-2 .fontawesome-icon-inline i{
     color: var(--orange);
     padding-left: 0.4rem;
 }
 
-.region-footer #block-contactinfo .fontawesome-icon-inline a{
+.region-footer #block-contactinfo-2 .fontawesome-icon-inline a{
     color: var(--light-color);
     
 }
 
-.region-footer #block-contactinfo .fontawesome-icon-inline:hover i{
+.region-footer #block-contactinfo-2 p:hover i{
     padding-right: 0.4rem;
 }
 
@@ -79,6 +84,7 @@
 
 .region-footer #block-quicklinks .fontawesome-icon-inline a{
     color: var(--light-color);
+   
 }
 
 .region-footer #block-quicklinks .fontawesome-icon-inline a:hover{

@@ -7,12 +7,16 @@ global-styling:
       css/menu.css: {}
       css/features.css: {}
       css/banner.css: {}
-      # css/products.css: {}
-      css/products2.css: {}
+      css/products.css: {}
+      #css/products2.css: {}
       css/categories.css: {}
       css/customer.css: {}
       css/blogs.css: {}
       css/footer.css: {}
+      css/blogs/blogview.css: {}
+      css/blogs/blogs-adv.css: {}
+      css/shops/shopview.css: {}
+
       https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css: { type: external, minified: true }
     
   dependencies:

@@ -1,0 +1,8 @@
+name: RSVP List
+description: From Acquia
+
+package: RSVP List
+type: module
+version: 1.0
+core: 8.x
+configure: rsvplist.admin_settings

@@ -1,9 +1,15 @@
 .paragraph--type--blogs{
     text-align: center;
-    margin: 2rem 6%;
+    /* margin: 2rem 6%; */
+    /* max-width: 1900px; */
+    /* margin: 0 auto; */
+    width: 88%;
+    max-width: 1900px;
+    margin: 2rem auto;
+
 }
 
-.paragraph--type--blogs .field--name-field-title-blogs{
+.paragraph--type--blogs .field--name-field-title-blog{
     font-size: 3rem;
     background: var(--orange);  
     color: #fff; 
@@ -59,7 +65,7 @@
     
 }
 
-.paragraph--type--blogs .views-field-field-title-blog{
+.paragraph--type--blogs .views-field-field-title-blogs{
     color: var(--black);
     font-size: 1.8rem;
     font-weight: bold;
@@ -69,7 +75,7 @@
 }
 
 
-.paragraph--type--blogs .views-field-field-descrip-blog{
+.paragraph--type--blogs .views-field-field-description-blog{
     color: var(--light-color);
     font-size: 1.4rem;
     text-align: left;

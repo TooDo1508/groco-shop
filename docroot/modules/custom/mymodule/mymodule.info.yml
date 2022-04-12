@@ -1,0 +1,4 @@
+name: My First Custom Module
+description: 'mymodule create by Acquia'
+type: module
+core: 8.x

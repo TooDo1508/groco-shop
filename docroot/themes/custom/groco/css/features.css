@@ -1,9 +1,13 @@
 
 .paragraph--type--features{
     text-align: center;
-    margin: 2rem 6%;
+    width: 88%;
+    max-width: 1900px;
+    margin: 2rem auto;
+
+
 }
-.paragraph--type--features .field--name-field-title-features{
+.paragraph--type--features .field--name-field-ti{
     font-size: 3rem;
     background: var(--orange);  
     color: #fff; 
@@ -28,6 +32,7 @@
     outline: var(--outline);
     outline-offset: -1rem;
     transition: .2s linear;
+    border-radius: .5rem;
 }
 
 .paragraph--type--features-content:hover{
@@ -47,7 +52,7 @@
 }
 
 
-.paragraph--type--features-content .field--type-string-long{
+.paragraph--type--features-content .field--name-field-cont{
     font-size: 1.3rem;
     color: var(--light-color);
     padding: 1.3rem;
