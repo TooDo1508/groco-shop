@@ -170,7 +170,6 @@ jobs:
             rm -rf $HOME/build/web/sites/default/files
             rsync -ar --delete --exclude '.git' $HOME/build/ $HOME/pantheon
             rm -f $HOME/pantheon/web/sites/default/settings.local.php
-            git checkout $HOME/pantheon/web/sites/default/files
             git add -A --force .
             echo "**************************"
             echo $COMMIT_MESSAGE
