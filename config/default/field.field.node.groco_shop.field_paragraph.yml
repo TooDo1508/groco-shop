@@ -1,0 +1,62 @@
+uuid: c5c4d692-f48a-4dce-8860-404ed79ece9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraph
+    - node.type.groco_shop
+    - paragraphs.paragraphs_type.banner
+    - paragraphs.paragraphs_type.blogs
+    - paragraphs.paragraphs_type.categories
+    - paragraphs.paragraphs_type.customer
+    - paragraphs.paragraphs_type.features
+    - paragraphs.paragraphs_type.products
+  module:
+    - entity_reference_revisions
+id: node.groco_shop.field_paragraph
+field_name: field_paragraph
+entity_type: node
+bundle: groco_shop
+label: paragraph
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      banner: banner
+      features: features
+      blogs: blogs
+      customer: customer
+      categories: categories
+      products: products
+    target_bundles_drag_drop:
+      banner:
+        enabled: true
+        weight: 2
+      blogs:
+        enabled: true
+        weight: 6
+      categories:
+        enabled: true
+        weight: 10
+      customer:
+        enabled: true
+        weight: 9
+      customer_content:
+        weight: 10
+        enabled: false
+      features:
+        enabled: true
+        weight: 5
+      features_content:
+        weight: 6
+        enabled: false
+      products:
+        enabled: true
+        weight: 16
+field_type: entity_reference_revisions

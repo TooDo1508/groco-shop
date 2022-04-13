@@ -1,0 +1,23 @@
+uuid: 9034bcb2-652f-4906-8921-e9cb97cb1216
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bt
+    - paragraphs.paragraphs_type.features_content
+  module:
+    - link
+id: paragraph.features_content.field_bt
+field_name: field_bt
+entity_type: paragraph
+bundle: features_content
+label: btn-features
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

@@ -1,0 +1,49 @@
+uuid: da30d429-34df-449a-9839-26729995dea3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.categories.field_title_categories
+    - field.field.paragraph.categories.field_views_categoires
+    - paragraphs.paragraphs_type.categories
+    - views.view.categories
+  module:
+    - views_field_formatter
+id: paragraph.categories.default
+targetEntityType: paragraph
+bundle: categories
+mode: default
+content:
+  field_title_categories:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_views_categoires:
+    weight: 1
+    label: hidden
+    settings:
+      view: 'categories::default'
+      arguments:
+        field_value:
+          checked: '1'
+          weight: '0'
+        entity_id:
+          checked: '1'
+          weight: '0'
+        delta:
+          checked: '1'
+          weight: '0'
+        entity_revision_id:
+          checked: '1'
+          weight: '0'
+      implode_character: ''
+      hide_empty: 0
+      multiple: 0
+    third_party_settings: {  }
+    type: views_field_formatter
+    region: content
+hidden: {  }

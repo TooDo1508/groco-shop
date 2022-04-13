@@ -1,0 +1,22 @@
+uuid: 853c1f46-0264-4ef2-a2dc-33043c701793
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - yg_restaurant_lite
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: yg_restaurant_lite_help
+theme: yg_restaurant_lite
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

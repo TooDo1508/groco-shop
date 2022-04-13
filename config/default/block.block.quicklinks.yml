@@ -1,0 +1,25 @@
+uuid: 79b65490-11e9-4b73-af95-36272bac31f4
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:footer_groco:4497529e-9cda-493a-a81f-ebf809974417'
+  module:
+    - block_content
+  theme:
+    - groco
+id: quicklinks
+theme: groco
+region: footer
+weight: -8
+provider: null
+plugin: 'block_content:4497529e-9cda-493a-a81f-ebf809974417'
+settings:
+  id: 'block_content:4497529e-9cda-493a-a81f-ebf809974417'
+  label: 'Quick Links'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

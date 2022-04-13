@@ -1,0 +1,67 @@
+uuid: 66cad91f-b30e-4738-a9d7-d1c785ba0420
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.shop.field_img_shop
+    - field.field.node.shop.field_info_shop
+    - field.field.node.shop.field_intr
+    - field.field.node.shop.field_logo_shop
+    - field.field.node.shop.field_name_shop
+    - field.field.node.shop.field_shop_category
+    - node.type.shop
+  module:
+    - image
+    - user
+id: node.shop.default
+targetEntityType: node
+bundle: shop
+mode: default
+content:
+  field_img_shop:
+    weight: 4
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_info_shop:
+    weight: 5
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_intr:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_logo_shop:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_name_shop:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_shop_category: true

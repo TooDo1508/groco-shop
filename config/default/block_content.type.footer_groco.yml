@@ -1,0 +1,8 @@
+uuid: 25fecd01-1240-4fd4-a33f-16792e839272
+langcode: en
+status: true
+dependencies: {  }
+id: footer_groco
+label: 'Footer Groco'
+revision: 0
+description: ''

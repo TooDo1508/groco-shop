@@ -1,0 +1,22 @@
+uuid: 4123c063-203f-4f35-b809-5d0c09ceb716
+langcode: en
+status: true
+dependencies:
+  theme:
+    - yg_restaurant_lite
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: yg_restaurant_lite_local_tasks
+theme: yg_restaurant_lite
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

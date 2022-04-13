@@ -1,0 +1,22 @@
+uuid: 7cf58dc9-0512-4b47-bf09-3bd939a96c92
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_groco
+    - field.field.block_content.footer_groco.body
+  module:
+    - text
+id: block_content.footer_groco.default
+targetEntityType: block_content
+bundle: footer_groco
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

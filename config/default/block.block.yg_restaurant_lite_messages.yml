@@ -1,0 +1,22 @@
+uuid: 84f7961a-4474-40d0-8d63-185f30a65da5
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - yg_restaurant_lite
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: yg_restaurant_lite_messages
+theme: yg_restaurant_lite
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

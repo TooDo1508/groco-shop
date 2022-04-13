@@ -1,0 +1,19 @@
+uuid: 7ffd4c5f-5af8-4fa9-8cf4-16c42d1e4d02
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_content_blog
+field_name: field_content_blog
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

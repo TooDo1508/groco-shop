@@ -1,0 +1,33 @@
+uuid: c32d72b3-f72a-4a22-ae06-02f4d32e2736
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.customer.field_paragraph_customer
+    - field.field.paragraph.customer.field_title_customer
+    - paragraphs.paragraphs_type.customer
+  module:
+    - entity_reference_revisions
+id: paragraph.customer.default
+targetEntityType: paragraph
+bundle: customer
+mode: default
+content:
+  field_paragraph_customer:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_title_customer:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

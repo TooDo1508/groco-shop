@@ -1,0 +1,49 @@
+uuid: f008fc11-ca7f-4d9a-84fc-be866d1870e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.products.field_title_product
+    - field.field.paragraph.products.field_views_products
+    - paragraphs.paragraphs_type.products
+    - views.view.products
+  module:
+    - views_field_formatter
+id: paragraph.products.default
+targetEntityType: paragraph
+bundle: products
+mode: default
+content:
+  field_title_product:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_views_products:
+    weight: 1
+    label: hidden
+    settings:
+      view: 'products::default'
+      arguments:
+        field_value:
+          checked: '1'
+          weight: '0'
+        entity_id:
+          checked: '1'
+          weight: '0'
+        delta:
+          checked: '1'
+          weight: '0'
+        entity_revision_id:
+          checked: '1'
+          weight: '0'
+      implode_character: ''
+      hide_empty: 0
+      multiple: 0
+    third_party_settings: {  }
+    type: views_field_formatter
+    region: content
+hidden: {  }

@@ -1,0 +1,19 @@
+uuid: c6f37d2e-c79d-4ae6-900b-0b95bb206591
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description_blog
+    - node.type.blogs
+id: node.blogs.field_description_blog
+field_name: field_description_blog
+entity_type: node
+bundle: blogs
+label: description-blogs
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

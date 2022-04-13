@@ -1,0 +1,25 @@
+uuid: a9714acd-0c00-4934-8815-a84a65ba13d7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:footer_groco:4fcf8b88-0adf-459e-9ff6-bd3d34c10e2a'
+  module:
+    - block_content
+  theme:
+    - groco
+id: contactinfo_2
+theme: groco
+region: footer
+weight: -9
+provider: null
+plugin: 'block_content:4fcf8b88-0adf-459e-9ff6-bd3d34c10e2a'
+settings:
+  id: 'block_content:4fcf8b88-0adf-459e-9ff6-bd3d34c10e2a'
+  label: 'Contact Info'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

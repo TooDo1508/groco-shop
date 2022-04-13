@@ -1,0 +1,10 @@
+uuid: fcb8df42-2780-45f6-a7eb-58ae77b1ec9d
+langcode: en
+status: true
+dependencies: {  }
+id: customer_content
+label: Customer-content
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

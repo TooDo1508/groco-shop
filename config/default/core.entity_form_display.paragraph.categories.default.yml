@@ -1,0 +1,34 @@
+uuid: e044c933-438d-40a8-b63f-517c0ee0496d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.categories.field_title_categories
+    - field.field.paragraph.categories.field_views_categoires
+    - paragraphs.paragraphs_type.categories
+id: paragraph.categories.default
+targetEntityType: paragraph
+bundle: categories
+mode: default
+content:
+  field_title_categories:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_views_categoires:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true
