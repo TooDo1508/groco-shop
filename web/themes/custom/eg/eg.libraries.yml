@@ -1,4 +1,4 @@
-eg-css:  
+eg-css:
     css:
       base:
         css/base/styles.css: {}
@@ -8,10 +8,9 @@ eg-css:
         css/components/menu.css: {}
         css/components/button.css: {}
         css/components/views.css: {}
-      
-quicksand:  
+
+quicksand:
   css:
     theme:
       //fonts.googleapis.com/css?family=Quicksand: { type: external }
       css/styles.css: {}
-
