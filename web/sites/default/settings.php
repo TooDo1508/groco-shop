@@ -18,8 +18,7 @@ include __DIR__ . "/settings.pantheon.php";
 /**
  * Place the config directory outside the Drupal root.
  */
-$settings['config_sync_directory'] = dirname(DRUPAL_ROOT) . '/config';
-
+$settings['config_sync_directory'] = dirname(DRUPAL_ROOT) . '/config/default';
 /**
  * If there is a local settings file, then include it
  */
