@@ -3,17 +3,27 @@
 /* .menu--main{
     
 } */
+.region-header {
+    display: flex;
+    background-color: #fff;
+    justify-content: space-between;
+    /* margin: 0 auto; */
+    /* max-width: 2400px; */
+    /* align-items: flex-start; */
+    /* justify-self: ; */
 
-
+}
 
 .menu--main .menu{
     display: flex;
+    /* width: 51%; */
     justify-content: center;
-    box-shadow: var(--box-shadow);
+    /* box-shadow: var(--box-shadow); */
     height: 6rem;
     align-items: center;
     margin-left: -1rem;
     background-color: #fff;
+    
 }
 
 ul.menu{

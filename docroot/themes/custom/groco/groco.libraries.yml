@@ -16,6 +16,7 @@ global-styling:
       css/blogs/blogview.css: {}
       css/blogs/blogs-adv.css: {}
       css/shops/shopview.css: {}
+      css/products/productviews.css: {}
 
       https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css: { type: external, minified: true }
     

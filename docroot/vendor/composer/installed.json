@@ -1421,6 +1421,67 @@
             "install-path": "../../modules/contrib/fontawesome"
         },
         {
+            "name": "drupal/google_map_field",
+            "version": "1.14.0",
+            "version_normalized": "1.14.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/google_map_field.git",
+                "reference": "8.x-1.14"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/google_map_field-8.x-1.14.zip",
+                "reference": "8.x-1.14",
+                "shasum": "2ec797acb6591ab4ef96412da05930fdaaa15002"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.14",
+                    "datestamp": "1596020086",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Paulo Gomes",
+                    "homepage": "https://www.drupal.org/u/pauloamgomes",
+                    "email": "pauloamgomes@gmail.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Scot Hubbard",
+                    "homepage": "https://www.drupal.org/u/scothubbard",
+                    "email": "scot@scotserve.net",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "See contributors",
+                    "homepage": "https://www.drupal.org/node/1531046/committers"
+                }
+            ],
+            "description": "Defines a field type for Google Maps.",
+            "homepage": "http://drupal.org/project/google_map_field",
+            "support": {
+                "source": "https://git.drupalcode.org/project/google_map_field",
+                "issues": "http://drupal.org/project/google_map_field",
+                "irc": "irc://irc.freenode.org/drupal-contribute"
+            },
+            "install-path": "../../modules/contrib/google_map_field"
+        },
+        {
             "name": "drupal/paragraphs",
             "version": "1.12.0",
             "version_normalized": "1.12.0.0",
@@ -1503,6 +1564,56 @@
                 "source": "https://git.drupalcode.org/project/paragraphs"
             },
             "install-path": "../../modules/contrib/paragraphs"
+        },
+        {
+            "name": "drupal/simple_gmap",
+            "version": "3.0.1",
+            "version_normalized": "3.0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/simple_gmap.git",
+                "reference": "3.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/simple_gmap-3.0.1.zip",
+                "reference": "3.0.1",
+                "shasum": "16c3d3a2f3470312e8e82d5d95cb70ba7cb54ff1"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "require-dev": {
+                "drupal/address": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "3.0.1",
+                    "datestamp": "1622931515",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "martin107",
+                    "homepage": "https://www.drupal.org/user/2659379"
+                }
+            ],
+            "description": "Provides a Google Maps link/map formatter for simple Text fields.",
+            "homepage": "https://www.drupal.org/project/simple_gmap",
+            "support": {
+                "source": "https://git.drupalcode.org/project/simple_gmap"
+            },
+            "install-path": "../../modules/contrib/simple_gmap"
         },
         {
             "name": "drupal/viewfield",

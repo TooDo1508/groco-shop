@@ -23,7 +23,9 @@
         "drupal/core-vendor-hardening": "^8.8",
         "drupal/devel": "^4.1",
         "drupal/fontawesome": "^2.19",
+        "drupal/google_map_field": "^1.14",
         "drupal/paragraphs": "^1.12",
+        "drupal/simple_gmap": "^3.0",
         "drupal/viewfield": "^3.0@beta",
         "drupal/views_field_formatter": "^1.13",
         "drupal/yg_restaurant_lite": "^1.0"

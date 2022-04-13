@@ -12,6 +12,7 @@
     background: var(--orange);  
     color: #fff; 
     display: inline-block;
+    font-weight: bold;
     padding:.5rem 3rem;
     margin: 2rem 0;
     clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);

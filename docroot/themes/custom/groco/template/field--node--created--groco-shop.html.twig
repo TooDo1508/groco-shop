@@ -1,9 +1,9 @@
 {#
 /**
  * @file
- * Theme override for the node user field.
+ * Theme override for the node created field.
  *
- * This is an override of field.html.twig for the node user field. See that
+ * This is an override of field.html.twig for the node created field. See that
  * template for documentation about its details and overrides.
  *
  * Available variables:
@@ -21,8 +21,8 @@
 #}
 <span{{ attributes }}>
   {%- for item in items -%}
-  {# <span style="color: rgb(255, 169, 8);"><i  class="fas fa-user"> </i></span> #}
+    <span ><i style="color: rgb(255, 169, 8);" class="fas fa-calendar"> </i></span>
+
     {{ item.content }}
   {%- endfor -%}
 </span>
-  
