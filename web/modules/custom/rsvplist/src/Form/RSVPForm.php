@@ -1,26 +1,16 @@
 <?php
 
-// Create form from Acquia.
 namespace Drupal\rsvplist\Form;
 
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 
-/**
- *
- */
 class RSVPForm extends FormBase {
 
-  /**
-   *
-   */
   public function getFormId() {
     return 'rsvplist_email_form';
   }
 
-  /**
-   *
-   */
   public function buildForm(array $form, FormStateInterface $form_state) {
     $node = \Drupall::routeMatch()->getParamter('node');
     $nid = $node->nid->value;
@@ -42,9 +32,6 @@ class RSVPForm extends FormBase {
     return $form;
   }
 
-  /**
-   *
-   */
   public function submitForm(array &$form, FormStateInterface $form_state) {
     drupal_set_message(t('The form is working!'));
   }

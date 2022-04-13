@@ -2,16 +2,13 @@
 
 /**
  * @file
- */
-
-/**
- *
+ * File mymodule.module.
  */
 
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- *
+ * Implements hook_form_alter().
  */
 function mymodule_form_alter(&$form, FormStateInterface $form_state, $form_id) {
   if ($form_id == 'comment_comment_form') {
