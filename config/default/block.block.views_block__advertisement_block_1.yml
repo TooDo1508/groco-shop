@@ -27,7 +27,6 @@ visibility:
     id: node_type
     bundles:
       blogs: blogs
-      shop: shop
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'

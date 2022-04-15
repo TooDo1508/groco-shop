@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.products.field_cate
     - field.field.node.products.field_img_product
     - field.field.node.products.field_img_product2
+    - field.field.node.products.field_info_product
     - field.field.node.products.field_nam
     - field.field.node.products.field_price_product
     - field.field.node.products.field_shop_products
@@ -43,12 +44,19 @@ content:
     region: content
   field_img_product2:
     weight: 6
-    label: above
+    label: hidden
     settings:
       image_style: ''
       image_link: ''
     third_party_settings: {  }
     type: image
+    region: content
+  field_info_product:
+    weight: 7
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
     region: content
   field_nam:
     weight: 0
@@ -68,7 +76,7 @@ content:
     region: content
   field_shop_products:
     weight: 5
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }

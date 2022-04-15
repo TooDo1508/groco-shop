@@ -1,6 +1,6 @@
 uuid: 9d3a1be1-5e12-4c14-93e9-0cfd5b5fffb6
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - system
@@ -11,7 +11,7 @@ _core:
 id: groco_branding
 theme: groco
 region: header
-weight: -5
+weight: -10
 provider: null
 plugin: system_branding_block
 settings:

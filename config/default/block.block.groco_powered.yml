@@ -11,7 +11,7 @@ _core:
 id: groco_powered
 theme: groco
 region: header
-weight: -2
+weight: -4
 provider: null
 plugin: system_powered_by_block
 settings:

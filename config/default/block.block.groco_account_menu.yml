@@ -13,7 +13,7 @@ _core:
 id: groco_account_menu
 theme: groco
 region: header
-weight: -7
+weight: -8
 provider: null
 plugin: 'system_menu_block:account'
 settings:
@@ -24,9 +24,4 @@ settings:
   level: 1
   depth: 1
   expand_all_items: false
-visibility:
-  request_path:
-    id: request_path
-    pages: '<front>'
-    negate: false
-    context_mapping: {  }
+visibility: {  }

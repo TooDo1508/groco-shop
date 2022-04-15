@@ -9,10 +9,12 @@ dependencies:
     - field.field.node.shop.field_logo_shop
     - field.field.node.shop.field_name_shop
     - field.field.node.shop.field_shop_category
+    - field.field.node.shop.field_test_wf
     - node.type.shop
   module:
     - image
     - user
+    - webform
 id: node.shop.default
 targetEntityType: node
 bundle: shop
@@ -57,6 +59,14 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_test_wf:
+    weight: 6
+    label: above
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
     region: content
   links:
     weight: 0
