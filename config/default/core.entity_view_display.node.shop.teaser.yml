@@ -10,7 +10,6 @@ dependencies:
     - field.field.node.shop.field_logo_shop
     - field.field.node.shop.field_name_shop
     - field.field.node.shop.field_shop_category
-    - field.field.node.shop.field_test_wf
     - node.type.shop
   module:
     - user
@@ -31,4 +30,3 @@ hidden:
   field_logo_shop: true
   field_name_shop: true
   field_shop_category: true
-  field_test_wf: true
