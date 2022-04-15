@@ -16,11 +16,6 @@
     display: flex;
     border-bottom:var(--border);
 }
-.node--type-shop .field--name-field-logo-shop{   
-
-}
-
-
 
 .node--type-shop .field--name-field-name-shop{    
     color: var(--black);    

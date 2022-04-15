@@ -11,6 +11,7 @@
     font-size: 3rem;
     background: var(--orange);  
     color: #fff; 
+    font-weight: bold;
     display: inline-block;
     padding:.5rem 3rem;
     margin: 2rem 0;

@@ -93,34 +93,16 @@
 
   {% if display_submitted %}
     <footer class="node__meta">
-      {{ author_picture }}
+      {# {{ author_picture }}
       <div{{ author_attributes.addClass('node__submitted') }}>
-        {# {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-        {{ metadata }} #}
-      </div>
+        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
+        {{ metadata }}
+      </div> #}
     </footer>
   {% endif %}
 
   <div{{ content_attributes.addClass('node__content') }}>
-    <div class="header-shop">
-    {{ content.field_logo_shop }}
-    {{ content.	field_name_shop }}
-    </div>
-    <div class="box">
-      <span class="icons"><i class="fas fa-play"></i></span>
-      <p class="title-shop">Company Introduction</p>
-    </div>
-    {{ content.	field_intr }}   
-    <div class="box">
-      <span class="icons"><i class="fas fa-play"></i></span>
-      <p class="title-shop">Overview</p>
-    </div>
-    <div class="box">
-      {{ content.	field_img_shop }}
-      {{ content.	field_info_shop }}
-    </div>
-      {{ content.field_test_wf }}
-
+    {{ content }}
   </div>
-  <div class="clearfix"></div>
+
 </article>
