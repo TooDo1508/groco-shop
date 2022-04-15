@@ -5,6 +5,6 @@ features:
   favicon: 1
 logo:
   use_default: 0
-  path: 'public://618acbbe40a68ff8d6b7.jpg'
+  path: themes/custom/groco/logogroco.jpg
 favicon:
   use_default: 1

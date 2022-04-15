@@ -12,6 +12,7 @@
     color: #fff; 
     display: inline-block;
     padding:.5rem 3rem;
+    font-weight: bold;
     margin: 2rem 0;
     clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
 }

@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '2254cdeba5e30f2434be922b53bd50d92fc25393',
+        'reference' => '8287288cb6f87137b889f93db75d916269e6b631',
         'name' => 'drupal/legacy-project',
         'dev' => true,
     ),
@@ -646,6 +646,15 @@
                 0 => '8.9.20',
             ),
         ),
+        'drupal/google_map_field' => array(
+            'pretty_version' => '1.14.0',
+            'version' => '1.14.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/google_map_field',
+            'aliases' => array(),
+            'reference' => '8.x-1.14',
+            'dev_requirement' => false,
+        ),
         'drupal/hal' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -712,7 +721,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '2254cdeba5e30f2434be922b53bd50d92fc25393',
+            'reference' => '8287288cb6f87137b889f93db75d916269e6b631',
             'dev_requirement' => false,
         ),
         'drupal/link' => array(
@@ -988,6 +997,15 @@
                 0 => '8.9.20',
             ),
         ),
+        'drupal/webform' => array(
+            'pretty_version' => '6.1.3',
+            'version' => '6.1.3.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/webform',
+            'aliases' => array(),
+            'reference' => '6.1.3',
+            'dev_requirement' => false,
+        ),
         'drupal/workflows' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -1216,8 +1234,8 @@
         'psr/container-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0',
-                1 => '^1.0',
+                0 => '^1.0',
+                1 => '1.0',
             ),
         ),
         'psr/http-message' => array(

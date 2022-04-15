@@ -47,6 +47,8 @@ module:
   user: 0
   views_field_formatter: 0
   views_ui: 0
+  webform: 0
+  webform_ui: 0
   views: 10
   paragraphs: 11
   standard: 1000

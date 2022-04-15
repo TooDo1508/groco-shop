@@ -11,6 +11,7 @@
     color: #fff; 
     display: inline-block;
     padding:.5rem 3rem;
+    font-weight: bold;
     margin: 2rem 0;
     clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
 }
@@ -19,7 +20,7 @@
 
 } */
 
-.views-view-grid .views-col{
+.paragraph--type--products.views-view-grid .views-col{
     width: 30%;
     border-radius: .2rem;
     background: #fff;
@@ -31,12 +32,12 @@
     margin: 1rem 0rem;    
 }
 
-.views-col:hover{
+.paragraph--type--products.views-view-grid .views-col:hover{
     outline:var(--outline-hover);
     outline-offset: 0rem;
 }
 
-.views-col .view-field-field-img-product img{
+.paragraph--type--products.views-view-grid .views-col .view-field-field-img-product img{
     height: 10rem;
 }
 

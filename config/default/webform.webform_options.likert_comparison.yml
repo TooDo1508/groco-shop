@@ -1,0 +1,14 @@
+uuid: d6b85161-c84c-487a-bee3-caae3ad7e805
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: DMG4TKTHEXtHN8ho_sG_GiZHgweZ6nrRm6BAjk0LZ_Y
+id: likert_comparison
+label: 'Likert: Comparison'
+category: Likert
+likert: true
+options: "1: Much Worse\n2: Somewhat Worse\n3: About the Same\n4: Somewhat Better\n5: Much Better\n"

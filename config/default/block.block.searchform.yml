@@ -10,7 +10,7 @@ dependencies:
 id: searchform
 theme: groco
 region: header
-weight: 0
+weight: -3
 provider: null
 plugin: search_form_block
 settings:
