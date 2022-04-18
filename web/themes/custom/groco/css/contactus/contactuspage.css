@@ -1,0 +1,123 @@
+/* .node--type-contact-shop{
+    background: url(../../image/home-bg.jpg);
+    background-size: cover;
+    height: 50rem;
+} */
+
+.node--type-contact-shop{
+    /* margin: 2rem 6%; */
+}
+
+.node--type-contact-shop .field--name-field-paragraph-contact{
+    margin: 2rem 6%;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(32rem,1fr));
+    /* grid-template-columns: auto auto auto; */
+    gap:1.5rem;
+}
+
+.node--type-contact-shop .field--name-field-paragraph-contact .paragraph--type--contact-info{
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    padding: 3rem 2rem;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    transition: .1,5s linear;
+    border-radius: .5rem;
+    text-align: center;
+    height: 22rem;
+}
+
+.node--type-contact-shop .field--name-field-paragraph-contact  .paragraph--type--contact-info:hover{
+    outline:var(--outline-hover);
+    outline-offset: 0rem;
+}
+
+.paragraph--type--contact-info .field--name-field-img-contact img{
+    
+   
+
+}
+
+.paragraph--type--contact-info .field--name-field-title-contact{
+    font-size: 2.5rem;
+    margin: .5rem 0;
+    font-weight: bold;
+    color: var(--black);
+
+}
+
+.paragraph--type--contact-info .field--name-field-content-contact{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: var(--light-color);
+    padding-bottom:1rem ;
+    line-height: 2.5rem;
+}
+
+
+.field--name-field-wf-contact{
+    background-image: url(../../image/home-bg.jpg);
+    background-size: cover;
+max-width: 3400px;
+}
+
+.field--name-field-wf-contact .webform-submission-form{
+    margin-left: 6%;
+    width:40%;
+}
+.field--name-field-wf-contact .webform-submission-form .form-item-your-name{
+    padding-top: 2rem;
+
+}
+
+
+.field--name-field-wf-contact .webform-submission-form #edit-your-name{
+    height: 3.5rem;
+    border: var(--outline);
+    width: 100%;
+    padding: 1rem .5rem;
+    font-size: 1rem;
+}
+.field--name-field-wf-contact .webform-submission-form .iti--allow-dropdown{
+    width: 100%;
+}
+
+.field--name-field-wf-contact .webform-submission-form .iti--allow-dropdown input{
+    height: 3.5rem;
+    border: var(--outline);
+    width: 100%
+}
+.field--name-field-wf-contact .webform-submission-form .iti__selected-flag{
+    background-color: rgb(206, 200, 200);
+}
+
+
+.field--name-field-wf-contact .webform-submission-form  #edit-your-email{
+    height: 3.5rem;
+    border: var(--outline);
+    width: 100%;
+    padding: 1rem .5rem;
+    font-size: 1rem;
+}
+
+.field--name-field-wf-contact .webform-submission-form #edit-message{
+    height: 13rem;
+    border: var(--outline);
+    width: 100%;
+    padding: 1rem .5rem;
+    font-size: 1rem;
+}
+
+
+.field--name-field-wf-contact .webform-submission-form  .webform-button--submit{
+    width: 100%;
+    text-align: center;
+    font-size: 1.3rem;
+    border-radius: .2rem;
+    background-color: var(--orange);
+    height: 3.3rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
