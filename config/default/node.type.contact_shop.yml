@@ -1,0 +1,17 @@
+uuid: 043a46c5-d7e4-43f1-9a55-23ae24eb6a6a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Contact Shop'
+type: contact_shop
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

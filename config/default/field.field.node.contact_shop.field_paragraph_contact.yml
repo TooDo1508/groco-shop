@@ -1,0 +1,55 @@
+uuid: 39437f6e-8cea-43aa-ab37-f35c15edbc92
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraph_contact
+    - node.type.contact_shop
+    - paragraphs.paragraphs_type.contact_info
+  module:
+    - entity_reference_revisions
+id: node.contact_shop.field_paragraph_contact
+field_name: field_paragraph_contact
+entity_type: node
+bundle: contact_shop
+label: paragraph-contact
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      contact_info: contact_info
+    target_bundles_drag_drop:
+      banner:
+        weight: 10
+        enabled: false
+      blogs:
+        weight: 11
+        enabled: false
+      categories:
+        weight: 12
+        enabled: false
+      contact_info:
+        enabled: true
+        weight: 13
+      customer:
+        weight: 14
+        enabled: false
+      customer_content:
+        weight: 15
+        enabled: false
+      features:
+        weight: 16
+        enabled: false
+      features_content:
+        weight: 17
+        enabled: false
+      products:
+        weight: 18
+        enabled: false
+field_type: entity_reference_revisions
