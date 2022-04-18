@@ -1,0 +1,44 @@
+uuid: 908e9f65-82fa-4e21-99cc-47b4e00b51d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.contact_info.field_content_contact
+    - field.field.paragraph.contact_info.field_img_contact
+    - field.field.paragraph.contact_info.field_title_contact
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.contact_info
+  module:
+    - image
+id: paragraph.contact_info.default
+targetEntityType: paragraph
+bundle: contact_info
+mode: default
+content:
+  field_content_contact:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_img_contact:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_title_contact:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

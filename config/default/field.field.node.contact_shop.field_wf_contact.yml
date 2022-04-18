@@ -1,0 +1,25 @@
+uuid: 6d0b2f0d-40da-4378-81e0-1f72ee28a668
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_wf_contact
+    - node.type.contact_shop
+  module:
+    - webform
+id: node.contact_shop.field_wf_contact
+field_name: field_wf_contact
+entity_type: node
+bundle: contact_shop
+label: wf-contact
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

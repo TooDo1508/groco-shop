@@ -1,0 +1,36 @@
+uuid: 207409e8-5e1d-4c09-ba10-bd448221073a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.contact_shop.field_paragraph_contact
+    - field.field.node.contact_shop.field_wf_contact
+    - node.type.contact_shop
+  module:
+    - entity_reference_revisions
+    - user
+    - webform
+id: node.contact_shop.default
+targetEntityType: node
+bundle: contact_shop
+mode: default
+content:
+  field_paragraph_contact:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_wf_contact:
+    weight: 1
+    label: hidden
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
+    region: content
+hidden:
+  links: true

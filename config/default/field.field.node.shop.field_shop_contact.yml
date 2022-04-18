@@ -1,0 +1,25 @@
+uuid: 4213d047-4fa8-4efe-82a8-89b1640fcd8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_shop_contact
+    - node.type.shop
+  module:
+    - webform
+id: node.shop.field_shop_contact
+field_name: field_shop_contact
+entity_type: node
+bundle: shop
+label: shop-contact
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

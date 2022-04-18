@@ -1,0 +1,24 @@
+uuid: 314efafd-99bf-49a4-b3d4-fe7b103d0b9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.contact_shop.field_paragraph_contact
+    - field.field.node.contact_shop.field_wf_contact
+    - node.type.contact_shop
+  module:
+    - user
+id: node.contact_shop.teaser
+targetEntityType: node
+bundle: contact_shop
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_paragraph_contact: true
+  field_wf_contact: true

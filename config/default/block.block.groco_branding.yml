@@ -11,7 +11,7 @@ _core:
 id: groco_branding
 theme: groco
 region: header
-weight: -10
+weight: -11
 provider: null
 plugin: system_branding_block
 settings:

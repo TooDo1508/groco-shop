@@ -1,0 +1,20 @@
+uuid: 808a0509-fc41-4ea6-8800-1cbb1429b91c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - webform
+id: node.field_shop_contact
+field_name: field_shop_contact
+entity_type: node
+type: webform
+settings:
+  target_type: webform
+module: webform
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

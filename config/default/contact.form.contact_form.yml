@@ -1,0 +1,12 @@
+uuid: edbdd180-f4b6-4fb1-801a-ad72138e923b
+langcode: en
+status: true
+dependencies: {  }
+id: contact_form
+label: 'Contact Form'
+recipients:
+  - duongnt.ml08@gmail.com
+reply: ''
+weight: 0
+message: ''
+redirect: ''
