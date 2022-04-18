@@ -1,13 +1,21 @@
 
 .node--type-shop{
-    width: 66%;
-    background-color: #fff;
-    border-radius: .5rem;
-    box-shadow: var(--box-shadow);
     margin: 2rem 6%;
     /* margin-left:6%; */
     /* background-color: red; */
-    max-width: 1900px;
+    max-width: 3400px;
+    /* background-color: #fff;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    width: 66%; */
+}
+.node--type-shop .shop-content{
+    background-color: #fff;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    width: 76%;
+    margin-right: 2%;
+
 }
 
 .node--type-shop .header-shop{
@@ -68,4 +76,77 @@
     line-height:2.4rem;
     /* color: var(--black); */
     margin-left: 1rem;
+}
+
+
+.node--type-shop .form-contact{
+    width: 20%;
+    /* background-color: red; */
+    /* background-color: red; */
+    /* background-color: #fff; */
+    /* border-radius: .5rem; */
+    /* box-shadow: var(--box-shadow); */
+}
+
+
+.node--type-shop .form-contact .field--name-field-shop-contact{
+    background-color: #fff;
+    /* margin: 1rem 2%; */
+    
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    /* float: left; */
+    margin-top: -1rem;
+}
+.node--type-shop .form-contact .field--name-field-shop-contact form{
+    padding: 0 6%;
+}
+
+.node--type-shop .form-contact .field--name-field-shop-contact #edit-your-name{
+    height: 3.5rem;
+    border: var(--outline);
+    width: 100%;
+    padding: 1rem .5rem;
+    font-size: 1rem;
+}
+
+.node--type-shop .form-contact .iti--allow-dropdown{
+    /* height: 3rem; */
+}
+
+.node--type-shop .form-contact .iti--allow-dropdown input{
+    height: 3.5rem;
+    border: var(--outline);
+    width: 100%
+}
+.node--type-shop .form-contact .iti__selected-flag{
+    background-color: rgb(206, 200, 200);
+}
+
+.node--type-shop .form-contact .field--name-field-shop-contact #edit-your-email{
+    height: 3.5rem;
+    border: var(--outline);
+    width: 100%;
+    padding: 1rem .5rem;
+    font-size: 1rem;
+}
+
+.node--type-shop .form-contact .field--name-field-shop-contact #edit-message{
+    height: 13rem;
+    border: var(--outline);
+    width: 100%;
+    padding: 1rem .5rem;
+    font-size: 1rem;
+}
+
+
+.node--type-shop .form-contact .webform-button--submit{
+    width: 100%;
+    text-align: center;
+    font-size: 1.3rem;
+    border-radius: .2rem;
+    background-color: var(--orange);
+    height: 3.3rem;
+    color: #fff;
+    margin-bottom: 2rem;
 }
