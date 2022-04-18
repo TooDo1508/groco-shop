@@ -11,7 +11,7 @@ _core:
 id: groco_search
 theme: groco
 region: header
-weight: -6
+weight: -8
 provider: null
 plugin: search_form_block
 settings:

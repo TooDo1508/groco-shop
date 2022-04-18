@@ -12,7 +12,7 @@ id: contact_groco
 title: 'Contact Groco'
 description: ''
 category: ''
-elements: "your_name:\n  '#type': textfield\n  '#title': 'Your Name'\n  '#placeholder': 'Your Name'\nnumber:\n  '#type': tel\n  '#title': 'Phone Number'\n  '#minlength': 12\n  '#maxlength': 12\n  '#placeholder': 'Phone Number'\n  '#international': true\n  '#international_initial_country': VN\n  '#international_preferred_countries':\n    - VN\nyour_email:\n  '#type': textfield\n  '#title': 'Your Email'\n  '#placeholder': 'Your Email'\nmessage:\n  '#type': textarea\n  '#title': Message\n  '#placeholder': Message"
+elements: "your_name:\n  '#type': textfield\n  '#title': 'Your Name'\n  '#title_display': none\n  '#placeholder': 'Your Name'\n  '#required': true\nnumber:\n  '#type': tel\n  '#title': 'Phone Number'\n  '#title_display': invisible\n  '#minlength': 12\n  '#maxlength': 12\n  '#placeholder': 'Phone Number'\n  '#required': true\n  '#international': true\n  '#international_initial_country': VN\n  '#international_preferred_countries':\n    - VN\nyour_email:\n  '#type': textfield\n  '#title': 'Your Email'\n  '#title_display': none\n  '#placeholder': 'Your Email'\n  '#required': true\nmessage:\n  '#type': textarea\n  '#title': Message\n  '#title_display': none\n  '#placeholder': Message\n  '#required': true"
 css: ''
 javascript: ''
 settings:
@@ -30,7 +30,7 @@ settings:
   form_exception_message: ''
   form_open_message: ''
   form_close_message: ''
-  form_previous_submissions: true
+  form_previous_submissions: false
   form_confidential: false
   form_confidential_message: ''
   form_disable_remote_addr: false
