@@ -1,0 +1,21 @@
+uuid: f825654e-73a4-4c32-b7f6-dc6b021de6f8
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_title_contact
+field_name: field_title_contact
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
