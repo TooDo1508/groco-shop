@@ -19,7 +19,7 @@
 
 .node--type-contact-shop .field--name-field-paragraph-contact .paragraph--type--contact-info{
     background: #fff;
-    box-shadow: var(--box-shadow);
+    /* box-shadow: var(--box-shadow); */
     padding: 3rem 2rem;
     outline: var(--outline);
     outline-offset: -1rem;

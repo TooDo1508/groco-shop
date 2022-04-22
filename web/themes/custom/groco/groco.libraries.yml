@@ -17,6 +17,7 @@ global-styling:
       css/blogs/blogs-adv.css: {}
       css/shops/shopview.css: {}
       css/shops/contactform.css: {}
+      css/shops/productshop.css: {}
       css/products/productviews.css: {}
       css/contactus/breadcrumb.css: {}
       css/contactus/contactuspage.css: {}
