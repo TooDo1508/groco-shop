@@ -7,12 +7,14 @@ dependencies:
     - field.field.node.shop.field_info_shop
     - field.field.node.shop.field_intr
     - field.field.node.shop.field_logo_shop
+    - field.field.node.shop.field_map_shop
     - field.field.node.shop.field_name_shop
     - field.field.node.shop.field_shop_category
     - field.field.node.shop.field_shop_contact
     - node.type.shop
   module:
     - image
+    - leaflet
     - user
     - webform
 id: node.shop.default
@@ -51,6 +53,77 @@ content:
       image_link: ''
     third_party_settings: {  }
     type: image
+    region: content
+  field_map_shop:
+    weight: 7
+    label: above
+    settings:
+      multiple_map: false
+      popup: true
+      popup_content: '[node:title]'
+      leaflet_map: 'OSM Mapnik'
+      height: 400
+      height_unit: px
+      reset_map:
+        position: topright
+        control: false
+      map_position:
+        center:
+          lat: !!float 0
+          lon: !!float 0
+        zoom: 12
+        minZoom: 1
+        maxZoom: 18
+        zoomFiner: 0
+        force: false
+      weight: ''
+      icon:
+        iconType: marker
+        iconUrl: ''
+        shadowUrl: ''
+        className: ''
+        html: '<div></div>'
+        html_class: leaflet-map-divicon
+        circle_marker_options: '{"radius":100,"color":"red","fillColor":"#f03","fillOpacity":0.5}'
+        iconSize:
+          x: ''
+          'y': ''
+        iconAnchor:
+          x: ''
+          'y': ''
+        shadowSize:
+          x: ''
+          'y': ''
+        shadowAnchor:
+          x: ''
+          'y': ''
+        popupAnchor:
+          x: ''
+          'y': ''
+      leaflet_markercluster:
+        options: '{"spiderfyOnMaxZoom":true,"showCoverageOnHover":true,"removeOutsideVisibleBounds":false}'
+        control: false
+        include_path: false
+      fullscreen:
+        options: '{"position":"topleft","pseudoFullscreen":false}'
+        control: false
+      path: '{"color":"#3388ff","opacity":"1.0","stroke":true,"weight":3,"fill":"depends","fillColor":"*","fillOpacity":"0.2","radius":"6"}'
+      hide_empty_map: false
+      disable_wheel: false
+      gesture_handling: false
+      geocoder:
+        control: false
+        settings:
+          position: topright
+          input_size: 25
+          providers: {  }
+          min_terms: 4
+          delay: 800
+          zoom: 16
+          popup: false
+          options: ''
+    third_party_settings: {  }
+    type: leaflet_formatter_default
     region: content
   field_name_shop:
     weight: 2
