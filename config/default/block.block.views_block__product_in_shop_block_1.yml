@@ -1,0 +1,34 @@
+uuid: e0280687-7e3a-45c6-a484-38a015855e1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.product_in_shop
+  module:
+    - node
+    - views
+  theme:
+    - groco
+id: views_block__product_in_shop_block_1
+theme: groco
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'views_block:product_in_shop-block_1'
+settings:
+  id: 'views_block:product_in_shop-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      blogs: blogs
+      shop: shop
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
