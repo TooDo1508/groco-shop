@@ -1,0 +1,24 @@
+uuid: 81728207-c0d4-4991-8c7b-9bbbc76f8627
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_d
+    - node.type.shop
+  module:
+    - text
+id: node.shop.field_d
+field_name: field_d
+entity_type: node
+bundle: shop
+label: description-shop
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: "<p><span class=\"fontawesome-icon-inline\"><i class=\"fas fa-calendar-alt\"></i>&nbsp;<span class=\"fontawesome-icon-inline\"><i class=\"fas fa-check-circle\"></i>&nbsp;<span class=\"fontawesome-icon-inline\"><i class=\"fas fa-location-circle\"></i>&nbsp;<span class=\"fontawesome-icon-inline\"><i class=\"fas fa-location-arrow\"></i>&nbsp;</span></span></span></span></p>\r\n"
+    format: full_html
+default_value_callback: ''
+settings: {  }
+field_type: text_long

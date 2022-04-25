@@ -1,0 +1,19 @@
+uuid: daf566b3-0248-407b-a171-897b400abeea
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_d
+field_name: field_d
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

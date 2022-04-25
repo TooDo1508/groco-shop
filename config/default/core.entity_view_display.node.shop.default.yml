@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.shop.field_d
     - field.field.node.shop.field_img_shop
     - field.field.node.shop.field_info_shop
     - field.field.node.shop.field_intr
@@ -15,6 +16,7 @@ dependencies:
   module:
     - image
     - leaflet
+    - text
     - user
     - webform
 id: node.shop.default
@@ -22,6 +24,13 @@ targetEntityType: node
 bundle: shop
 mode: default
 content:
+  field_d:
+    weight: 8
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
   field_img_shop:
     weight: 4
     label: hidden
@@ -56,17 +65,17 @@ content:
     region: content
   field_map_shop:
     weight: 7
-    label: above
+    label: hidden
     settings:
       multiple_map: false
       popup: true
       popup_content: '[node:title]'
       leaflet_map: 'OSM Mapnik'
-      height: 400
+      height: 350
       height_unit: px
       reset_map:
+        control: true
         position: topright
-        control: false
       map_position:
         center:
           lat: !!float 0
