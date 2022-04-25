@@ -1,0 +1,30 @@
+.breadcrumb-custom{
+    background:url(../../image/breadcrumb.png) no-repeat;
+    background-size: cover;
+    height: 15rem;
+    background-position: bottom;
+    text-align: center;
+}
+
+.breadcrumb-custom p{
+    font-size: 3rem;
+    color: var(--black); 
+    display: inline-block;
+    font-weight: bold;
+    padding:.5rem 3rem;
+    margin: 1.2rem 0;
+}
+
+.breadcrumb-custom .breadcrumb{
+    font-size: 1.5rem;
+    color: var(--light-color);
+}
+
+.breadcrumb-custom .breadcrumb a{    
+    color: var(--light-color);
+}
+
+.breadcrumb-custom .breadcrumb a:hover{
+    color: var(--orange);
+}    
+
