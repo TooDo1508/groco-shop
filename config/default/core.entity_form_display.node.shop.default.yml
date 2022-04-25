@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.shop.field_d
     - field.field.node.shop.field_img_shop
     - field.field.node.shop.field_info_shop
     - field.field.node.shop.field_intr
@@ -17,6 +18,7 @@ dependencies:
     - geofield
     - image
     - path
+    - text
     - webform
 id: node.shop.default
 targetEntityType: node
@@ -29,6 +31,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_d:
+    weight: 130
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
   field_img_shop:
     weight: 126
     settings:

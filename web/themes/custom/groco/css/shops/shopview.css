@@ -33,6 +33,21 @@
     margin-left: 2rem;
     
 }
+.node--type-shop .description-shop{
+    display: block;    
+}
+
+.node--type-shop .field--name-field-d{    
+    margin-left: 2rem;
+    font-size: 1rem;
+    margin-top: .8rem;
+}
+
+.node--type-shop .field--name-field-d i{
+    color: var(--orange);
+    margin-right: .3rem;
+}
+
 
 
 .node--type-shop .box{
@@ -41,14 +56,14 @@
 }
 
 
-.node--type-shop .box i{
+.node--type-shop .box .box i{
     color: var(--orange);
     padding-top: .1rem;
     font-size: 1.7rem;
     margin-right: 1.2rem;
 }
 
-.node--type-shop .box p{
+.node--type-shop .box .box p{
     color: rgb(182, 109, 15);
     font-size: 1.8rem;
     text-align: center;

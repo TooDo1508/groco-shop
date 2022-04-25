@@ -10,3 +10,55 @@
     padding-top: 2rem;
     margin-bottom: 2rem;
 }
+
+
+.block-views-blockproduct-in-shop-block-1 .view-content{
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit,minmax(24rem,1fr)); */
+    grid-template-columns: auto auto auto auto;
+    gap:1.5rem;
+}
+
+.block-views-blockproduct-in-shop-block-1 .view-content .views-row{
+    background-color: #FFF;
+    text-align: center;
+    border-radius: .5rem;
+    outline: var(--outline);
+    outline-offset: -1rem;
+}
+
+.block-views-blockproduct-in-shop-block-1 .view-content .views-row:hover{
+    outline:var(--outline-hover);
+    outline-offset: 0rem;
+}
+
+.block-views-blockproduct-in-shop-block-1 .view-content .views-row .views-field-field-img-product img{
+    height: 12rem;
+    width: 12rem;
+    margin-top: 2rem;
+}
+
+.block-views-blockproduct-in-shop-block-1 .view-content .views-row .views-field-field-nam a{
+    font-size: 2.2rem;
+    color: var(--black);
+    margin: 1rem 0;
+    font-weight: bold;
+}
+
+.block-views-blockproduct-in-shop-block-1 .view-content .views-row .views-field-field-price-product{
+    font-size: 1.4rem;
+    color: var(--light-color);
+    margin: 1rem 0;
+    margin-bottom: 2rem;
+}
+
+
+.block-views-blockproduct-in-shop-block-1 .pager{
+    margin-top: 2rem;
+}
+
+
+.block-views-blockproduct-in-shop-block-1 .pager ul li a{
+    color: var(--black);
+    font-size: 1.2rem;
+}

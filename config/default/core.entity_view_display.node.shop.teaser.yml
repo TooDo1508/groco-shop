@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.shop.field_d
     - field.field.node.shop.field_img_shop
     - field.field.node.shop.field_info_shop
     - field.field.node.shop.field_intr
@@ -26,6 +27,7 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_d: true
   field_img_shop: true
   field_info_shop: true
   field_intr: true
