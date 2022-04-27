@@ -19,17 +19,21 @@ global-styling:
       css/shops/contactform.css: {}
       css/shops/productshop.css: {}
       css/products/productviews.css: {}
+      css/products/product-slide.css: {}
       css/contactus/breadcrumb.css: {}
       css/contactus/contactuspage.css: {}
 
 
 
+      https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css: { type: external, minified: true }
 
       https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css: { type: external, minified: true }
     
+  
+  js:    
+    https://unpkg.com/swiper@7/swiper-bundle.min.js: { type: external, minified: true }
+    //cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js: {}
+    js/script.js: {}
   dependencies:
     - core/jquery
     - core/jquery.ui.effects.core
-  js:    
-    js/script.js: {}
-    https://unpkg.com/swiper@7/swiper-bundle.min.js: { type: external, minified: true }
