@@ -1,0 +1,25 @@
+uuid: e46b5162-707b-4e16-9588-ef6c9d0a98e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_product_contact
+    - node.type.products
+  module:
+    - webform
+id: node.products.field_product_contact
+field_name: field_product_contact
+entity_type: node
+bundle: products
+label: product-contact
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

@@ -19,6 +19,7 @@ global-styling:
       css/shops/contactform.css: {}
       css/shops/productshop.css: {}
       css/products/productviews.css: {}
+      css/products/contactform.css: {}
       css/products/product-slide.css: {}
       css/contactus/breadcrumb.css: {}
       css/contactus/contactuspage.css: {}

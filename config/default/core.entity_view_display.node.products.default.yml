@@ -10,12 +10,14 @@ dependencies:
     - field.field.node.products.field_info_product
     - field.field.node.products.field_nam
     - field.field.node.products.field_price_product
+    - field.field.node.products.field_product_contact
     - field.field.node.products.field_shop_products
     - node.type.products
   module:
     - image
     - link
     - user
+    - webform
 id: node.products.default
 targetEntityType: node
 bundle: products
@@ -73,6 +75,14 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_product_contact:
+    weight: 8
+    label: hidden
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
     region: content
   field_shop_products:
     weight: 5
