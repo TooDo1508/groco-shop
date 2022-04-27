@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_shop_contact
     - node.type.shop
+    - webform.webform.contact_groco
   module:
     - webform
 id: node.shop.field_shop_contact
@@ -15,7 +16,13 @@ label: shop-contact
 description: ''
 required: false
 translatable: false
-default_value: {  }
+default_value:
+  -
+    default_data: ''
+    status: open
+    open: ''
+    close: ''
+    target_uuid: 7f1df4aa-45db-456a-8d6f-9c424a655a0e
 default_value_callback: ''
 settings:
   handler: 'default:webform'

@@ -1,0 +1,112 @@
+/* .slick-cloned{
+    width: 200px;
+}
+
+.view-testslide{
+    margin: 0 auto;
+    width: 100rem;
+}
+
+
+.view-id-testslide .views-row{
+
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    padding: 3rem 2rem;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    transition: .2s linear;
+    border-radius: .5rem;
+    margin: 2rem 1rem;
+    margin-left: 2rem;
+    padding-left: 2rem;
+}
+
+.slide__content:hover {
+    outline:var(--outline-hover);
+    outline-offset: 0rem;
+}
+
+.slide__content .slide__caption{
+    text-align: center;
+}
+
+.slide__content .slide__caption img{
+    margin: 0 auto;
+}
+.slide__content .slide__caption .views-field-title{
+    font-size: 2.8rem;
+    color: var(--black);
+}
+
+.slide__content .slide__caption .views-field-field-price-product{
+    font-size: 2rem;
+    color: var(--light-color);
+} */
+.view-id-product_slide {
+    /* background:#fff; */
+    /* padding: 2rem 2rem; */
+}
+
+.view-id-product_slide .slick-list div div div{
+    margin: 1rem .8rem;
+}
+
+
+.view-id-product_slide .slick-list .slick-slide .views-row{
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    padding: 3rem 2rem;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    transition: .2s linear;
+    border-radius: .5rem;
+    /* margin: 2rem 1rem; */
+    margin-left: 2rem;
+    /* padding-left: 2rem; */
+}
+
+
+
+.view-id-product_slide .slick-list  .views-row:hover{
+    outline:var(--outline-hover);
+    outline-offset: 0rem;
+}
+.view-id-product_slide .slick-list .slick-slide .views-row .views-field-field-nam a{
+    margin-top: 1rem;
+    margin-bottom: -2rem;
+}
+
+.view-id-product_slide .slick-list .slick-slide .views-row .views-field-field-nam a{
+    color: var(--black);
+    font-size: 2.2rem;
+ 
+}
+.view-id-product_slide .slick-list .slick-slide .views-row .views-field-field-img-product img{
+    height: 12rem;
+    margin: 0 auto;
+    width: 12rem;
+
+}
+
+.view-id-product_slide .slick-list .slick-slide .views-row .views-field-field-price-product{
+    margin-bottom: -2rem;
+    margin-top: -2rem;
+}
+
+.view-id-product_slide .slick-list .slick-slide .views-row .views-field-field-btn-product a{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border:.2rem solid var(--black);
+    color:var(--black);
+    cursor: pointer;
+    background: none;
+}
+
+.view-id-product_slide .slick-list .slick-slide .views-row .views-field-field-btn-product a:hover{
+    background-color: var(--orange);
+    color: #fff;
+}

@@ -6,7 +6,7 @@ dependencies:
     - field.field.paragraph.products.field_title_product
     - field.field.paragraph.products.field_views_products
     - paragraphs.paragraphs_type.products
-    - views.view.products
+    - views.view.product_slide
   module:
     - views_field_formatter
 id: paragraph.products.default
@@ -26,7 +26,7 @@ content:
     weight: 1
     label: hidden
     settings:
-      view: 'products::default'
+      view: 'product_slide::default'
       arguments:
         field_value:
           checked: '1'
