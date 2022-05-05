@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.products.field_info_product
     - field.field.node.products.field_nam
     - field.field.node.products.field_price_product
+    - field.field.node.products.field_product_contact
     - field.field.node.products.field_shop_products
     - node.type.products
   module:
@@ -33,4 +34,5 @@ hidden:
   field_info_product: true
   field_nam: true
   field_price_product: true
+  field_product_contact: true
   field_shop_products: true

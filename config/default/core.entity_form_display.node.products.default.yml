@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.products.field_info_product
     - field.field.node.products.field_nam
     - field.field.node.products.field_price_product
+    - field.field.node.products.field_product_contact
     - field.field.node.products.field_shop_products
     - image.style.thumbnail
     - node.type.products
@@ -18,6 +19,7 @@ dependencies:
     - image
     - link
     - path
+    - webform
 id: node.products.default
 targetEntityType: node
 bundle: products
@@ -86,6 +88,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_product_contact:
+    weight: 129
+    settings:
+      default_data: true
+      webforms: {  }
+    third_party_settings: {  }
+    type: webform_entity_reference_select
     region: content
   field_shop_products:
     weight: 126
