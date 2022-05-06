@@ -1,0 +1,72 @@
+/* .slick-cloned{
+    width: 200px;
+}
+
+.view-testslide{
+    margin: 0 auto;
+    width: 100rem;
+}
+
+
+.view-id-testslide .views-row{
+
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    padding: 3rem 2rem;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    transition: .2s linear;
+    border-radius: .5rem;
+    margin: 2rem 1rem;
+    margin-left: 2rem;
+    padding-left: 2rem;
+}
+
+.slide__content:hover {
+    outline:var(--outline-hover);
+    outline-offset: 0rem;
+}
+
+.slide__content .slide__caption{
+    text-align: center;
+}
+
+.slide__content .slide__caption img{
+    margin: 0 auto;
+}
+.slide__content .slide__caption .views-field-title{
+    font-size: 2.8rem;
+    color: var(--black);
+}
+
+.slide__content .slide__caption .views-field-field-price-product{
+    font-size: 2rem;
+    color: var(--light-color);
+} */
+.views-element-container{
+    /* background:#fff; */
+    /* padding: 2rem 2rem; */
+}
+
+
+.view-product-slide .slick-list .views-row{
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    padding: 3rem 2rem;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    transition: .2s linear;
+    border-radius: .5rem;
+    /* margin: 2rem 1rem; */
+    margin-left: 2rem;
+    /* padding-left: 2rem; */
+}
+.view-testslide .slick-list div div{
+    margin: 1rem .2rem;
+}
+
+
+.view-testslide .slick-list  .views-row:hover{
+    outline:var(--outline-hover);
+    outline-offset: 0rem;
+}

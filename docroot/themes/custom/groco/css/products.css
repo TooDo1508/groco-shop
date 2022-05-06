@@ -20,7 +20,7 @@
 
 } */
 
-.views-view-grid .views-col{
+.paragraph--type--products.views-view-grid .views-col{
     width: 30%;
     border-radius: .2rem;
     background: #fff;
@@ -32,12 +32,12 @@
     margin: 1rem 0rem;    
 }
 
-.views-col:hover{
+.paragraph--type--products.views-view-grid .views-col:hover{
     outline:var(--outline-hover);
     outline-offset: 0rem;
 }
 
-.views-col .view-field-field-img-product img{
+.paragraph--type--products.views-view-grid .views-col .view-field-field-img-product img{
     height: 10rem;
 }
 

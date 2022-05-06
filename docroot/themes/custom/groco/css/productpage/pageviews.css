@@ -1,0 +1,15 @@
+.view-id-testproduct{
+    margin: 2rem 6%;
+}
+
+.view-id-testproduct .form--inline{
+    display: flex;
+}
+
+.view-id-testproduct .form--inline .form-item-name-value{
+    margin-right: 2rem;
+}
+.view-id-testproduct .form--inline .form-item-field-nam-value input{
+    margin-right: 2rem;
+    height: 3rem;
+}

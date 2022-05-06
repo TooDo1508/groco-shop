@@ -7,22 +7,31 @@ global-styling:
       css/menu.css: {}
       css/features.css: {}
       css/banner.css: {}
+      css/slide.css: {}
       css/products.css: {}
       #css/products2.css: {}
       css/categories.css: {}
       css/customer.css: {}
+      css/breadcrumb.css: {}
       css/blogs.css: {}
       css/footer.css: {}
       css/blogs/blogview.css: {}
       css/blogs/blogs-adv.css: {}
       css/shops/shopview.css: {}
+      css/shops/productshop.css: {}
+      css/shops/productinshop.css: {}
       css/products/productviews.css: {}
+      css/products/product-slide.css: {}
+      css/productpage/pageviews.css: {}
 
       https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css: { type: external, minified: true }
-    
+      https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css: { type: external, minified: true }
+
+  js:    
+    //unpkg.com/swiper@7/swiper-bundle.min.js: { type: external, minified: true }
+    //cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js: {}
+    js/scription.js: {}
+
   dependencies:
     - core/jquery
-    - core/jquery.ui.effects.core
-  js:    
-    js/script.js: {}
-    https://unpkg.com/swiper@7/swiper-bundle.min.js: { type: external, minified: true }
+    - core/jquery.ui.effects.cores
