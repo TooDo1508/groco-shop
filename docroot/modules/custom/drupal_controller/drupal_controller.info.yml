@@ -1,0 +1,4 @@
+name: Drupal Up Controller with Template
+description: 'This just is description'
+type: module
+core: 8.x

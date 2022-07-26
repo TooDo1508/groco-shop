@@ -1,0 +1,20 @@
+uuid: d75d30fa-d9c4-4b2b-a93a-b384349e8933
+langcode: vi
+status: true
+dependencies:
+  config:
+    - comment.type.cmt_type
+id: comment.cmt_type.name
+field_name: name
+entity_type: comment
+bundle: cmt_type
+label: Name
+description: 'The comment author''s name.'
+required: false
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

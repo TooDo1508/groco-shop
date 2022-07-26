@@ -1,0 +1,18 @@
+uuid: fb1e9428-3b77-4717-9acf-e32cb63be39d
+langcode: vi
+status: true
+dependencies:
+  config:
+    - comment.type.cmt_type
+id: comment.cmt_type.mail
+field_name: mail
+entity_type: comment
+bundle: cmt_type
+label: Email
+description: 'The comment author''s email address.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

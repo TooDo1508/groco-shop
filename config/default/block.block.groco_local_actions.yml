@@ -1,0 +1,20 @@
+uuid: a1be346a-4c06-4643-b63f-dd162a139836
+langcode: en
+status: false
+dependencies:
+  theme:
+    - groco
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: groco_local_actions
+theme: groco
+region: content
+weight: -7
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

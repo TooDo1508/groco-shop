@@ -1,0 +1,20 @@
+uuid: 5d028016-bf46-4cc2-938e-a359906a4919
+langcode: vi
+status: true
+dependencies:
+  config:
+    - media.type.video
+id: media.video.name
+field_name: name
+entity_type: media
+bundle: video
+label: Name
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,7 @@
+drupal_controller.article_list:
+  path: '/drupal/articles'
+  defaults:
+    _controller: '\Drupal\drupal_controller\Controller\ArticleController::page'
+    _title: 'Our custom Article list'
+  requiremants:
+    _permission: 'access content'

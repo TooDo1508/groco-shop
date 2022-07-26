@@ -1,0 +1,46 @@
+uuid: d0499d19-f166-4876-a84e-c144433b364a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraph_customer
+    - paragraphs.paragraphs_type.customer
+    - paragraphs.paragraphs_type.customer_content
+  module:
+    - entity_reference_revisions
+id: paragraph.customer.field_paragraph_customer
+field_name: field_paragraph_customer
+entity_type: paragraph
+bundle: customer
+label: paragraph-customer
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      customer_content: customer_content
+    target_bundles_drag_drop:
+      banner:
+        weight: 6
+        enabled: false
+      blogs:
+        weight: 7
+        enabled: false
+      customer:
+        weight: 8
+        enabled: false
+      customer_content:
+        enabled: true
+        weight: 10
+      features:
+        weight: 9
+        enabled: false
+      features_content:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

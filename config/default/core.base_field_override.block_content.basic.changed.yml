@@ -1,0 +1,18 @@
+uuid: 6bda95a8-7f1e-46f7-ae6b-56714ee0236e
+langcode: vi
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+id: block_content.basic.changed
+field_name: changed
+entity_type: block_content
+bundle: basic
+label: Changed
+description: 'The time that the custom block was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

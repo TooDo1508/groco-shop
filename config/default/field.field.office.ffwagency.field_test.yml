@@ -1,0 +1,21 @@
+uuid: d165c5cb-64db-4ffb-8002-873c45b03c14
+langcode: en
+status: true
+dependencies:
+  config:
+    - ffw_custom.office_type.ffwagency
+    - field.storage.office.field_test
+  module:
+    - options
+id: office.ffwagency.field_test
+field_name: field_test
+entity_type: office
+bundle: ffwagency
+label: test
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

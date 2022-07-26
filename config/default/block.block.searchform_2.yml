@@ -1,0 +1,27 @@
+uuid: e4304c7a-6bf4-47d8-b4fb-2218159de607
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+    - system
+  theme:
+    - groco
+id: searchform_2
+theme: groco
+region: content
+weight: -6
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  provider: search
+  label_display: visible
+  page_id: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: '<testsearch>'
+    negate: false
+    context_mapping: {  }

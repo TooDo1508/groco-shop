@@ -1,0 +1,57 @@
+uuid: b8827b3c-6357-47e9-8a02-3f00f1851743
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraph_aboutus
+    - node.type.about_us
+    - paragraphs.paragraphs_type.banner
+    - paragraphs.paragraphs_type.features_content
+  module:
+    - entity_reference_revisions
+id: node.about_us.field_paragraph_aboutus
+field_name: field_paragraph_aboutus
+entity_type: node
+bundle: about_us
+label: paragraph_aboutus
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      banner: banner
+      features_content: features_content
+    target_bundles_drag_drop:
+      banner:
+        enabled: true
+        weight: 10
+      blogs:
+        weight: 11
+        enabled: false
+      categories:
+        weight: 12
+        enabled: false
+      customer:
+        weight: 13
+        enabled: false
+      customer_content:
+        weight: 14
+        enabled: false
+      features:
+        weight: 15
+        enabled: false
+      features_content:
+        enabled: true
+        weight: 16
+      product_shop_page:
+        weight: 18
+        enabled: false
+      products:
+        weight: 17
+        enabled: false
+field_type: entity_reference_revisions

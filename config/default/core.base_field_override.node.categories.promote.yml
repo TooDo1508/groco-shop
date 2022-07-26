@@ -1,0 +1,22 @@
+uuid: 73016552-beda-4f77-ba22-1d26a0b0080e
+langcode: vi
+status: true
+dependencies:
+  config:
+    - node.type.categories
+id: node.categories.promote
+field_name: promote
+entity_type: node
+bundle: categories
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,32 @@
+uuid: 359a996d-87e8-48a7-af34-dae7ed702cca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.about_us.field_paragraph_aboutus
+    - node.type.about_us
+  module:
+    - entity_reference_revisions
+    - user
+id: node.about_us.default
+targetEntityType: node
+bundle: about_us
+mode: default
+content:
+  field_paragraph_aboutus:
+    type: entity_reference_revisions_entity_view
+    weight: 101
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  search_api_excerpt: true

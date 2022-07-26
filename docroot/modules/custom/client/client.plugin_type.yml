@@ -1,0 +1,4 @@
+# client.client_behavior:
+#   label: 'client behavior'
+#   plugin_manager_service_id: plugin.manager.client.behavior
+#   plugin_definition_decorator_class: Drupal\plugin\PluginDefinition\ArrayPluginDefinitionDecorator

@@ -1,0 +1,23 @@
+uuid: 71be2392-b357-4177-9b52-187c05d6275e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_views_categoires
+    - paragraphs.paragraphs_type.categories
+id: paragraph.categories.field_views_categoires
+field_name: field_views_categoires
+entity_type: paragraph
+bundle: categories
+label: views-categoires
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

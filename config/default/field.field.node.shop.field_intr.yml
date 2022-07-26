@@ -1,0 +1,19 @@
+uuid: 8e51d79c-0b34-4948-bb7b-68ff47ab9701
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_intr
+    - node.type.shop
+id: node.shop.field_intr
+field_name: field_intr
+entity_type: node
+bundle: shop
+label: intro-shop
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

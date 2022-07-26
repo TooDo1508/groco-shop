@@ -1,0 +1,24 @@
+uuid: 1f6e4470-51b3-4ac5-80ed-a3713205d257
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.shoppage.field_paragraph_product_sp
+    - node.type.shoppage
+  module:
+    - user
+id: node.shoppage.teaser
+targetEntityType: node
+bundle: shoppage
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_paragraph_product_sp: true
+  langcode: true
+  search_api_excerpt: true

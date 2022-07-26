@@ -1,0 +1,26 @@
+uuid: 653edac1-3c9f-4e48-8333-53dcda7f3abe
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.groco_shop.field_checkbox_grocosho
+    - field.field.node.groco_shop.field_paragraph
+    - node.type.groco_shop
+  module:
+    - user
+id: node.groco_shop.teaser
+targetEntityType: node
+bundle: groco_shop
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_checkbox_grocosho: true
+  field_paragraph: true
+  langcode: true
+  search_api_excerpt: true

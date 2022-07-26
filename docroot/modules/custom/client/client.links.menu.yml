@@ -1,0 +1,31 @@
+# # Defines the menu links for this module
+
+# entity.content_entity_example_contact.collection:
+#   title: 'Content Entity Example: Contacts Listing'
+#   route_name: entity.content_entity_example_contact.collection
+#   description: 'List Contacts'
+#   weight: 10
+# content_entity_example_contact.admin.structure.settings:
+#   title: Contact Settings
+#   description: 'Configure Contact entity'
+#   route_name:  content_entity_example.contact_settings
+#   parent: system.admin_structure
+
+entity.client_type.collection:
+  title: 'Client types'
+  parent: system.admin_structure
+  description: 'Client Entity'
+  route_name: entity.client_type.collection
+
+client.type_add:
+  title: 'Add client type'
+  menu_name: admin
+  parent: entity.client_type.collection
+  route_name: client.type_add
+
+
+client.type_edit:
+  title: 'Edit client type'
+  menu_name: admin
+  parent: entity.client_type.collection
+  route_name: client.type_edit

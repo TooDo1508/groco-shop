@@ -1,0 +1,20 @@
+uuid: 67c30f86-256c-43d6-9d8c-253c5e1845b0
+langcode: vi
+status: true
+dependencies:
+  config:
+    - node.type.shoppage
+  module:
+    - path
+id: node.shoppage.path
+field_name: path
+entity_type: node
+bundle: shoppage
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

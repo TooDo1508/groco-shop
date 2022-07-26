@@ -1,0 +1,18 @@
+uuid: e7feabe4-01a5-433b-9d20-7755ee1b3134
+langcode: vi
+status: true
+dependencies:
+  config:
+    - node.type.categories
+id: node.categories.title
+field_name: title
+entity_type: node
+bundle: categories
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

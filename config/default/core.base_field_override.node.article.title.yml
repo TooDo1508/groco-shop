@@ -1,0 +1,18 @@
+uuid: 54fc36b8-3e79-4ee4-9999-e1df004cd2f4
+langcode: vi
+status: true
+dependencies:
+  config:
+    - node.type.article
+id: node.article.title
+field_name: title
+entity_type: node
+bundle: article
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -43,5 +43,170 @@ ul.menu{
     color: var(--orange);
 }
 
+/* .menu--account .menu{
+    display: block;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    right: 50%;
+} */
+.menu--account{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu--account .icon-user{
+    background: #eee;
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:var(--black);
+    cursor: pointer;
+    border-radius: .4rem;
+    margin-right: 4rem;
+}
 
+.menu--account .icon-user:hover{
+    background: var(--orange);
+    color:#fff;
+}
+
+.menu--account .icon-user{
+}
+
+.menu--account .fa-search:hover .menu{
+    display: block;
+}
+
+.menu--account .menu-account{
+    display: flex;
+    position: absolute;
+    top:4.5rem; 
+    right:-500%;
+    width: 11rem;
+    height:5rem;
+    
+    background: #eee;
+    border-radius: .5rem;
+    overflow: hidden;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+    z-index: 1;
+    align-items: center;
+
+}
+
+.menu--account .menu-account ul{
+    margin-left: 1rem;
+}
+
+.menu--account .menu-account ul li a{ 
+    font-size: 1.2rem;
+    color: var(--black);
+}
+
+.menu--account .menu-account ul li:hover a{
+    color: var(--orange); 
+}
+
+
+
+.menu--account .menu-account{
+}
+
+.menu--account .menu-account.active{
+    right:4rem;
+    transition: .3s linear;
+}
+
+
+.form-login{
+    width: 20rem;
+    position: absolute;
+    z-index: 1;
+    top: 4rem;
+    right:-230%;
+
+    width:25rem;
+    box-shadow: var(--box-shadow);
+    padding:2rem;
+    border-radius: .5rem;
+    background: #fff;
+    text-align: center;
+    
+}
+
+.form-login.active{
+    right:4rem;
+    transition: .7s linear;
+
+}
+
+.form-login h2{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+
+.form-login .form-required{
+    font-size: 1.2rem;
+    color: var(--black);
+    font-weight: bold;
+    display: none;
+    /* display: none; */
+}
+
+.form-login .form-text{
+    background-color: #eee;
+    width: 100%;
+    height: 3rem;
+    border-radius: .5rem;
+    padding-left: 1rem;
+}
+
+.form-login .form-submit{
+    display: inline-block;
+    padding:.5rem 4rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border:.2rem solid var(--black);
+    color:var(--black);
+    cursor: pointer;
+    background: none;
+}
+
+.form-login .form-submit:hover{
+    background: var(--orange);
+    color:#fff;
+}
+
+.form-login .item-list{
+    text-align: start;
+    margin-left: -1rem;
+}
+
+.form-login .item-list ul li{
+    display: block;
+    list-style-type: none;
+    text-decoration: underline;
+
+}
+
+.form-login .item-list ul li a{
+    color: var(--black);
+    font-size: 1.1rem;
+
+}
+
+
+.form-login .item-list ul li:hover a{
+    color: var(--orange);
+}
 

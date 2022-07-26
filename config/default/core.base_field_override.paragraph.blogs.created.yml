@@ -1,0 +1,18 @@
+uuid: a21a16ca-6031-4d1d-8311-3549f8e93df0
+langcode: vi
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.blogs
+id: paragraph.blogs.created
+field_name: created
+entity_type: paragraph
+bundle: blogs
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

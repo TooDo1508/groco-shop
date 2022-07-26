@@ -1,0 +1,15 @@
+uuid: e42fa786-bbb2-4492-bf3d-79a709e4ae7c
+langcode: en
+status: true
+dependencies: {  }
+name: adv_product
+label: 'Adv Product'
+effects:
+  7e093cd1-820e-453f-b285-0db02efb30f7:
+    uuid: 7e093cd1-820e-453f-b285-0db02efb30f7
+    id: image_scale
+    weight: 1
+    data:
+      width: 150
+      height: 150
+      upscale: false

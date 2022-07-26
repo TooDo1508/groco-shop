@@ -1,0 +1,33 @@
+add office entities:
+  title: 'Create new Office entities'
+
+administer office entities:
+  title: 'Administer Office entities'
+  description: 'Allow to access the administration form to configure Office entities.'
+  restrict access: true
+
+delete office entities:
+  title: 'Delete Office entities'
+
+edit office entities:
+  title: 'Edit Office entities'
+
+view published office entities:
+  title: 'View published Office entities'
+
+view unpublished office entities:
+  title: 'View unpublished Office entities'
+
+view all office revisions:
+  title: 'View all Office revisions'
+
+revert all office revisions:
+  title: 'Revert all Office revisions'
+  description: 'Role requires permission <em>view Office revisions</em> and <em>edit rights</em> for office entities in question or <em>administer office entities</em>.'
+
+delete all office revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Office revisions</em> and <em>delete rights</em> for office entities in question or <em>administer office entities</em>.'
+
+permission_callbacks:
+  - \Drupal\ffw_custom\officePermissions::generatePermissions

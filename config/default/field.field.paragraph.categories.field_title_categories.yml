@@ -1,0 +1,19 @@
+uuid: 95332122-9e1e-4146-901c-bc888478f4a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title_categories
+    - paragraphs.paragraphs_type.categories
+id: paragraph.categories.field_title_categories
+field_name: field_title_categories
+entity_type: paragraph
+bundle: categories
+label: title-categories
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

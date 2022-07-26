@@ -1,0 +1,32 @@
+uuid: 7c3a77e1-a4d1-4cb1-b874-d22e405ad8ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.shoppage.field_paragraph_product_sp
+    - node.type.shoppage
+  module:
+    - entity_reference_revisions
+    - user
+id: node.shoppage.default
+targetEntityType: node
+bundle: shoppage
+mode: default
+content:
+  field_paragraph_product_sp:
+    type: entity_reference_revisions_entity_view
+    weight: 102
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,22 @@
+uuid: b20c6274-5cc9-4fe6-9420-862cb25f4e56
+langcode: vi
+status: true
+dependencies:
+  config:
+    - node.type.categories
+id: node.categories.status
+field_name: status
+entity_type: node
+bundle: categories
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,18 @@
+uuid: fa8c0615-6243-40b7-ae77-9e574e7d8a8b
+langcode: vi
+status: true
+dependencies:
+  config:
+    - comment.type.cmt_type
+id: comment.cmt_type.created
+field_name: created
+entity_type: comment
+bundle: cmt_type
+label: Created
+description: 'The time that the comment was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

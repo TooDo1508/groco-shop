@@ -1,0 +1,23 @@
+uuid: 14c16ade-59ad-4428-9cbb-b14b20814da7
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - node
+id: about_us
+label: 'About Us'
+type: 'canonical_entities:node'
+pattern: '/aboutus/[node:url]'
+selection_criteria:
+  ffb9f410-5acd-4b7e-9f65-1cd3efce1b6b:
+    id: 'entity_bundle:node'
+    bundles:
+      about_us: about_us
+    negate: false
+    context_mapping:
+      node: node
+    uuid: ffb9f410-5acd-4b7e-9f65-1cd3efce1b6b
+selection_logic: and
+weight: -5
+relationships: {  }

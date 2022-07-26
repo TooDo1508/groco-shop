@@ -1,0 +1,25 @@
+uuid: 908e538a-6dac-4197-bfb0-8f4b4ef1d6ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.feature_quote.field_image_feature
+    - paragraphs.paragraphs_type.feature_quote
+  module:
+    - image
+id: paragraph.feature_quote.default
+targetEntityType: paragraph
+bundle: feature_quote
+mode: default
+content:
+  field_image_feature:
+    weight: 0
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  search_api_excerpt: true

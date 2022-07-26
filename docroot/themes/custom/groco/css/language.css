@@ -1,0 +1,67 @@
+.language-switcher-language-url h2{
+    display: none;
+}
+.language-switcher-language-url ul li{
+    list-style-type: none;
+}
+
+.language-switcher-language-url{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.language-current{
+    background: #eee;
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:var(--black);
+    cursor: pointer;
+    border-radius: .4rem;
+    margin-right: 4rem;
+}
+.language-current i{
+    font-size: 1.2rem;
+}
+
+.language-current:hover{
+    background: var(--orange);
+    color:#fff;
+}
+
+.dropdown-language{
+    width: 9rem;
+    height: 5rem;
+    margin-top: 7.4rem;
+    display: none; 
+    position: absolute;
+    z-index: 1;
+    margin-right: 2rem;
+    background: #eee;
+    align-items: center;
+    justify-content: center;
+    border-radius: .5rem;
+
+}
+
+.language-current:hover .dropdown-language {
+    display: flex;
+}
+
+.dropdown-language ul li{
+    float: left;
+    margin-left: 1rem;
+    font-size: 1.1rem;
+}
+
+.dropdown-language{
+    margin-right: 6.5rem;
+}
+
+

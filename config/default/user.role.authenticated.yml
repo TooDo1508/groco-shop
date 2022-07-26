@@ -1,0 +1,32 @@
+uuid: fa4b2ebd-209c-4f39-936b-be8595a8f005
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'administer languages'
+  - 'post comments'
+  - 'search content'
+  - 'skip comment approval'
+  - 'use text format basic_html'
+  - 'view about_us revisions'
+  - 'view all revisions'
+  - 'view article revisions'
+  - 'view blogs revisions'
+  - 'view categories revisions'
+  - 'view groco_shop revisions'
+  - 'view media'
+  - 'view own unpublished content'
+  - 'view page revisions'
+  - 'view products revisions'
+  - 'view shop revisions'
+  - 'view shoppage revisions'

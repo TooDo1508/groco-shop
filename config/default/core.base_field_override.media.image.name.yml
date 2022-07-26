@@ -1,0 +1,20 @@
+uuid: c6da1038-3be3-4fba-9484-7061fcb565d3
+langcode: vi
+status: true
+dependencies:
+  config:
+    - media.type.image
+id: media.image.name
+field_name: name
+entity_type: media
+bundle: image
+label: Name
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -52,3 +52,39 @@ jQuery('.slide_product').slick({
       },
     },
 });
+
+
+
+let searchForm = document.querySelector('.menu-account');
+let loginForm = document.querySelector('.form-login');
+
+document.querySelector('#login-btn').onclick = () => {
+    searchForm.classList.toggle('active');
+
+    loginForm.classList.toggle('active');
+    // alert('acdeff');
+    console.log('1');
+    
+}
+
+jQuery("#edit-name").attr("placeholder", "Your Email");
+
+jQuery("#edit-pass").attr("placeholder", "Your Password");
+
+
+// document.querySelector('#search-btn-abcd').onclick = function() { 
+//   alert('bla bla'); 
+// }
+
+// document.getElementById('search-btn-abcd').addEventListener('click',displayDate)
+
+// function displayDate(){
+//   console.log('a');
+// }
+
+// document.getElementById('myBtn').addEventListener("click", notice);
+
+// function notice() {
+//   console.log('a');
+// }
+// console.log('abbbbbbbbbbbb');

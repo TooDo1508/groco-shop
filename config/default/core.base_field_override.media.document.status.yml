@@ -1,0 +1,22 @@
+uuid: 5bcb43c7-23fe-4d44-bab3-4096f74bdd76
+langcode: vi
+status: true
+dependencies:
+  config:
+    - media.type.document
+id: media.document.status
+field_name: status
+entity_type: media
+bundle: document
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -100,13 +100,14 @@
       </div>
     </footer>
   {% endif %}
-
+ {# {{ display }} #}
   <div{{ content_attributes.addClass('node__content') }}>
+ 
     <div class="header-shop">
     {{ content.field_logo_shop }}
     {{ content.	field_name_shop }}
     </div>
-    <div class="box">
+    <div class="box" style=" {{ display }}">
       <span class="icons"><i class="fas fa-play"></i></span>
       <p class="title-shop">Company Introduction</p>
     </div>
@@ -126,5 +127,6 @@
       {{ content.	field_map_leaflet }}
 
   </div>
+  
   <div class="clearfix"></div>
 </article>

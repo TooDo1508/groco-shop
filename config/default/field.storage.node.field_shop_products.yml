@@ -1,0 +1,19 @@
+uuid: 2a127a98-10bf-42a5-8db3-504e1e71aef2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_shop_products
+field_name: field_shop_products
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

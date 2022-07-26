@@ -1,0 +1,13 @@
+uuid: 1425efab-d49f-4730-a586-27f405bf3c82
+langcode: en
+status: true
+dependencies: {  }
+id: image_quote
+label: 'Image Quote'
+description: ''
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image_1
+field_map: {  }

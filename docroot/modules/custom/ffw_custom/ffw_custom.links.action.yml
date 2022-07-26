@@ -1,0 +1,10 @@
+entity.office.add_form:
+  route_name: entity.office.add_page
+  title: 'Add Office'
+  appears_on:
+    - entity.office.collection
+entity.office_type.add_form:
+  route_name: entity.office_type.add_form
+  title: 'Add Office type'
+  appears_on:
+    - entity.office_type.collection

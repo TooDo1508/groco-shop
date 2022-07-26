@@ -1,0 +1,11 @@
+uuid: edcfa1e8-3303-4a18-902b-27e17ce86f2f
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.image_quote
+id: media.image_quote
+target_entity_type_id: media
+target_bundle: image_quote
+default_langcode: site_default
+language_alterable: false

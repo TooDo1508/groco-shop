@@ -1,0 +1,22 @@
+uuid: 936e32af-ee48-4649-8495-1600c42dc245
+langcode: vi
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.features
+id: paragraph.features.status
+field_name: status
+entity_type: paragraph
+bundle: features
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

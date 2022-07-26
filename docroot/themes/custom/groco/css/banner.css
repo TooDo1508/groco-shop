@@ -46,6 +46,10 @@
     
 }
 
+.paragraph--type--banner .field--type-link{
+    position: absolute;
+    z-index: 1;
+}
 
 .paragraph--type--banner .field--type-link a{
     margin-top: 1rem;

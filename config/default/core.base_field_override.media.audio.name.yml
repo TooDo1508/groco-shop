@@ -1,0 +1,20 @@
+uuid: fdccb628-ec56-4e1e-a109-ae57a00a4a55
+langcode: vi
+status: true
+dependencies:
+  config:
+    - media.type.audio
+id: media.audio.name
+field_name: name
+entity_type: media
+bundle: audio
+label: Name
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

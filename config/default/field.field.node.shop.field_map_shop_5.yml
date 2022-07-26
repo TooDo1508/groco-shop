@@ -1,0 +1,21 @@
+uuid: b2dcbfd2-ea8a-497f-b173-8fc155b769c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_map_shop_5
+    - node.type.shop
+  module:
+    - geomap_field
+id: node.shop.field_map_shop_5
+field_name: field_map_shop_5
+entity_type: node
+bundle: shop
+label: map-shop-5
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geomap

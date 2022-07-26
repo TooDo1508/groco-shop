@@ -1,0 +1,31 @@
+uuid: c06f72c2-7879-42c5-9b6b-3023280dd39d
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.contact_form
+    - field.field.contact_message.contact_form.field_phone_contact
+id: contact_message.contact_form.default
+targetEntityType: contact_message
+bundle: contact_form
+mode: default
+content:
+  field_phone_contact:
+    weight: 1
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  message:
+    type: basic_string
+    weight: 0
+    label: above
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  search_api_excerpt: true

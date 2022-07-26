@@ -1,5 +1,5 @@
 
-.paragraph--type--features{
+.field--name-field-paragraph .paragraph--type--features{
     text-align: center;
     width: 88%;
     max-width: 1900px;
@@ -7,7 +7,7 @@
 
 
 }
-.paragraph--type--features .field--name-field-ti{
+.field--name-field-paragraph .paragraph--type--features .field--name-field-ti{
     font-size: 3rem;
     background: var(--orange);  
     color: #fff; 
@@ -18,7 +18,7 @@
     clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
 }
 
-.paragraph--type--features .field--name-field-paragraph{
+.field--name-field-paragraph .paragraph--type--features .field--name-field-paragraph{
    display: grid;
    grid-template-columns: repeat(auto-fit,minmax(32rem,1fr));
    /* grid-template-columns: auto auto auto; */
@@ -26,7 +26,7 @@
 }
 
 
-.paragraph--type--features-content{
+.field--name-field-paragraph .paragraph--type--features-content{
     background: #fff;
     box-shadow: var(--box-shadow);
     padding: 3rem 2rem;
@@ -36,24 +36,24 @@
     border-radius: .5rem;
 }
 
-.paragraph--type--features-content:hover{
+.field--name-field-paragraph .paragraph--type--features-content:hover{
     outline:var(--outline-hover);
     outline-offset: 0rem;
 }
 
-.paragraph--type--features-content img{
+.field--name-field-paragraph .paragraph--type--features-content img{
     height: 12rem;
     padding: .3rem 0;
 }
 
-.paragraph--type--features-content .field--type-string{
+.field--name-field-paragraph .paragraph--type--features-content .field--type-string{
     font-size: 2.4rem;
     color: var(--black);
     font-weight: bold;
 }
 
 
-.paragraph--type--features-content .field--name-field-cont{
+.field--name-field-paragraph .paragraph--type--features-content .field--name-field-cont{
     font-size: 1.3rem;
     color: var(--light-color);
     padding: 1.3rem;
@@ -61,7 +61,7 @@
 
 }
 
-.paragraph--type--features-content .field--type-link a{
+.field--name-field-paragraph .paragraph--type--features-content .field--type-link a{
     margin-top: 1rem;
     display: inline-block;
     padding:.8rem 3rem;
@@ -74,7 +74,7 @@
 
 }
 
-.paragraph--type--features-content .field--type-link a:hover{
+.field--name-field-paragraph .paragraph--type--features-content .field--type-link a:hover{
     background: var(--orange);
     color:#fff;
 }

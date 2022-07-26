@@ -1,0 +1,32 @@
+uuid: 0582a215-48c8-463b-a61c-a52c36a9fc7c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.blogs_adv
+  module:
+    - node
+    - views
+  theme:
+    - groco
+id: views_block__blogs_adv_block_1
+theme: groco
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'views_block:blogs_adv-block_1'
+settings:
+  id: 'views_block:blogs_adv-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      blogs: blogs
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

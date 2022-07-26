@@ -1,0 +1,23 @@
+uuid: 165dfacb-80d0-4ad2-81cf-c5af4c851bf3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_testviews
+    - paragraphs.paragraphs_type.blogs
+id: paragraph.blogs.field_testviews
+field_name: field_testviews
+entity_type: paragraph
+bundle: blogs
+label: testviews
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

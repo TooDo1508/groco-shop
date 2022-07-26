@@ -1,0 +1,8 @@
+uuid: 19ebe199-e722-453b-8323-a60868093c49
+langcode: en
+status: true
+dependencies: {  }
+id: cmt_type
+label: 'cmt type'
+target_entity_type_id: block_content
+description: ''

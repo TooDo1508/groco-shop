@@ -1,0 +1,38 @@
+uuid: 68f540e7-1826-4c2a-bb30-3feab07d9c84
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_feature
+    - paragraphs.paragraphs_type.feature_quote
+  module:
+    - image
+id: paragraph.feature_quote.field_image_feature
+field_name: field_image_feature
+entity_type: paragraph
+bundle: feature_quote
+label: 'Image Feature'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: 620x400
+  min_resolution: 620x400
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

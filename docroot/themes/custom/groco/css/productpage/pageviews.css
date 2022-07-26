@@ -4,12 +4,190 @@
 
 .view-id-testproduct .form--inline{
     display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
-.view-id-testproduct .form--inline .form-item-name-value{
+/* -----NAME */
+
+.view-id-testproduct .form--inline .form-item-field-nam-value{
+    background-color: #fff;
     margin-right: 2rem;
+    border-radius: .5rem;
+    border: .1rem solid rgba(107, 102, 102, 0.438);
+    display: flex;
+    align-items: center;
 }
+
+.view-id-testproduct .form--inline .form-item-field-nam-value label{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--black);
+    margin-left: 1rem;
+    padding-right: 1rem;
+    border-right: .1rem solid rgba(107, 102, 102, 0.438);
+}
+
+
 .view-id-testproduct .form--inline .form-item-field-nam-value input{
+    font-size: 1.4rem;
+    margin-left: 1rem;  
+
+    
+}
+
+
+/* ----CATEGORY */
+
+
+.view-id-testproduct .form--inline .form-item-field-tax-product-target-id-1{
+    background-color: #fff;
     margin-right: 2rem;
-    height: 3rem;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    border: .1rem solid rgba(107, 102, 102, 0.438);
+
+}
+
+.view-id-testproduct .form--inline .form-item-field-tax-product-target-id-1 label{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--black);
+    margin-left: 1rem;
+    border-right: .1rem solid rgba(58, 54, 54, 0);
+    padding-right: 1rem;
+}
+
+.view-id-testproduct .form--inline .form-item-field-tax-product-target-id-1 select{
+    height: 100%;
+    font-size: 1.2rem;
+    color: var(--black);
+    font-weight: bold;
+    padding-left: 2rem;
+    border-radius: .5rem;
+    padding-right: 1rem;
+}
+
+.view-id-testproduct .form--inline .form-item-field-tax-product-target-id-1 select option {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: .5rem;
+}
+
+
+
+
+
+/* ---BUTTON SEARCH */
+.view-id-testproduct .view-header p{
+    font-size: 1.5rem;
+}
+
+
+.view-id-testproduct .form--inline .form-actions{
+    font-size: 1.2rem;
+    border: .1rem solid rgba(107, 102, 102, 0.438);
+    background-color: #DDDDDD;
+    height: 60px;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.3rem;cursor: pointer;
+
+}
+
+.view-id-testproduct .form--inline .form-actions input{
+    color: var(--black);
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #DDDDDD;
+}
+
+
+.view-id-testproduct .form--inline .form-actions:hover input{
+    color: var(--orange);
+    
+}
+
+/* --TITLE */
+.view-id-testproduct .view-header {
+    font-size: 1.2rem;
+    border-bottom:.15rem solid rgba(204, 203, 203, 0.527);
+    padding-bottom: 2rem;
+    display: block;
+    color: var(--light-color);
+}
+
+.view-id-testproduct .view-header .title p{
+    font-size: 2.5rem;
+    color:var(--black);
+    font-weight: bold;
+    margin-bottom: .5rem;
+
+    /* font-size: 3rem;
+    background: var(--orange);  
+    color: #fff; 
+    display: inline-block;
+    font-weight: bold;
+    padding:.5rem 3rem;
+    margin: 2rem 0;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%); */
+}
+/* ---VIEW-PRODUCTS */
+
+.view-id-testproduct .view-content{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1.5rem;
+
+}
+
+
+
+.view-id-testproduct .view-content .views-row{
+    background-color: #fff;
+    text-align: center;
+    border-radius: .5rem;
+    outline: var(--outline);
+    outline-offset: -1rem;
+}
+
+.view-id-testproduct .view-content .views-row:hover{
+    outline:var(--outline-hover);
+    outline-offset: 0rem;
+}
+
+.view-id-testproduct .view-content .views-row .views-field-field-img-product img{
+    height: 10rem;
+    width: 10rem;
+    transform-origin: 0 0;
+    transition: transform .25s, visibility .25s ease-in;
+}
+
+.view-id-testproduct .view-content .views-row .views-field-field-img-product:hover img{
+    transform: scale(1.1);
+}
+
+.view-id-testproduct .view-content .views-row .views-field-field-nam{
+    font-size: 2.2rem;
+    color: var(--black);
+    margin: 1rem 0;
+    font-weight: bold;
+}
+
+.view-id-testproduct .view-content .views-row .views-field-field-price-product{
+    font-size: 1.4rem;
+    color: var(--light-color);
+    margin: 1rem 0;
+    margin-bottom: 2rem;
+}
+
+
+/* ---PAGE  */
+
+.view-id-testproduct .pager{
+    margin-top: 2rem;
+    font-size: 1.4rem;
 }

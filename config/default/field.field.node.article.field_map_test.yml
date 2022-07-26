@@ -1,0 +1,21 @@
+uuid: 41876385-1b96-45b5-9ba8-504d06344da4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_map_test
+    - node.type.article
+  module:
+    - google_map_field
+id: node.article.field_map_test
+field_name: field_map_test
+entity_type: node
+bundle: article
+label: map-test
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: google_map_field

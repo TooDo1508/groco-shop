@@ -22,6 +22,8 @@
 html{
     font-size: 85.5%;
     background: #eee;
+    overflow-x: hidden;
+    
 }
 
 a{

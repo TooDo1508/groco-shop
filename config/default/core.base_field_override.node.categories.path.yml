@@ -1,0 +1,20 @@
+uuid: 2531cc8f-2b45-4705-9d52-9256aa4ec843
+langcode: vi
+status: true
+dependencies:
+  config:
+    - node.type.categories
+  module:
+    - path
+id: node.categories.path
+field_name: path
+entity_type: node
+bundle: categories
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

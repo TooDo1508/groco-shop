@@ -1,0 +1,19 @@
+uuid: 80fcde9b-5808-4672-b449-ca74c5fb5f15
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content_customer
+    - paragraphs.paragraphs_type.customer_content
+id: paragraph.customer_content.field_content_customer
+field_name: field_content_customer
+entity_type: paragraph
+bundle: customer_content
+label: content-customer
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

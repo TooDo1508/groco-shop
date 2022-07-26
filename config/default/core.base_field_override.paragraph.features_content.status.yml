@@ -1,0 +1,22 @@
+uuid: ba101d0a-4b75-4388-8348-0797be57a9a7
+langcode: vi
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.features_content
+id: paragraph.features_content.status
+field_name: status
+entity_type: paragraph
+bundle: features_content
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

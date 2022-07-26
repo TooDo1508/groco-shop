@@ -1,0 +1,20 @@
+uuid: 74f38859-6e10-4dd1-b928-911804a68d5e
+langcode: en
+status: true
+dependencies:
+  theme:
+    - yg_restaurant_lite
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: yg_restaurant_lite_page_title
+theme: yg_restaurant_lite
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

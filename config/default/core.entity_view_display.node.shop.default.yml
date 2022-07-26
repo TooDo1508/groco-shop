@@ -1,0 +1,210 @@
+uuid: 66cad91f-b30e-4738-a9d7-d1c785ba0420
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.shop.field_category_shop
+    - field.field.node.shop.field_img_shop
+    - field.field.node.shop.field_info_shop
+    - field.field.node.shop.field_intr
+    - field.field.node.shop.field_logo_shop
+    - field.field.node.shop.field_map
+    - field.field.node.shop.field_map_leaflet
+    - field.field.node.shop.field_map_shop_5
+    - field.field.node.shop.field_name_shop
+    - field.field.node.shop.field_products
+    - field.field.node.shop.field_shop_category
+    - field.field.node.shop.field_slide
+    - node.type.shop
+    - views.view.view_pis
+  module:
+    - geomap_field
+    - image
+    - leaflet
+    - user
+    - views_field_formatter
+id: node.shop.default
+targetEntityType: node
+bundle: shop
+mode: default
+content:
+  field_category_shop:
+    weight: 14
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_img_shop:
+    weight: 4
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_info_shop:
+    weight: 5
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_intr:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_logo_shop:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_map:
+    weight: 13
+    label: above
+    settings:
+      map_provider: 'yaml_map_provider:osm'
+      height: 350px
+      width: 350px
+    third_party_settings: {  }
+    type: geomap_default
+    region: content
+  field_map_leaflet:
+    weight: 11
+    label: above
+    settings:
+      multiple_map: false
+      popup: true
+      popup_content: '[node:field_test_map][node:title]'
+      leaflet_map: 'OSM Mapnik'
+      height: 400
+      height_unit: px
+      hide_empty_map: true
+      gesture_handling: true
+      reset_map:
+        control: true
+        position: topright
+      map_position:
+        center:
+          lat: !!float 0
+          lon: !!float 0
+        zoom: 12
+        minZoom: 1
+        maxZoom: 18
+        zoomFiner: 0
+        force: false
+      weight: ''
+      icon:
+        iconType: marker
+        iconUrl: ''
+        shadowUrl: ''
+        className: ''
+        html: '<div></div>'
+        html_class: leaflet-map-divicon
+        circle_marker_options: '{"radius":100,"color":"red","fillColor":"#f03","fillOpacity":0.5}'
+        iconSize:
+          x: ''
+          'y': ''
+        iconAnchor:
+          x: ''
+          'y': ''
+        shadowSize:
+          x: ''
+          'y': ''
+        shadowAnchor:
+          x: ''
+          'y': ''
+        popupAnchor:
+          x: ''
+          'y': ''
+      leaflet_markercluster:
+        options: '{"spiderfyOnMaxZoom":true,"showCoverageOnHover":true,"removeOutsideVisibleBounds":false}'
+        control: false
+        include_path: false
+      fullscreen:
+        options: '{"position":"topleft","pseudoFullscreen":false}'
+        control: false
+      path: '{"color":"#3388ff","opacity":"1.0","stroke":true,"weight":3,"fill":"depends","fillColor":"*","fillOpacity":"0.2","radius":"6"}'
+      geocoder:
+        settings:
+          position: topright
+          input_size: 25
+          min_terms: 4
+          delay: 800
+          zoom: 16
+          options: ''
+          popup: false
+        control: false
+      disable_wheel: false
+    third_party_settings: {  }
+    type: leaflet_formatter_default
+    region: content
+  field_map_shop_5:
+    weight: 10
+    label: above
+    settings:
+      map_provider: 'yaml_map_provider:osm'
+      height: 350px
+      width: 350px
+    third_party_settings: {  }
+    type: geomap_default
+    region: content
+  field_name_shop:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_products:
+    weight: 15
+    label: above
+    settings:
+      view: 'view_pis::default'
+      arguments:
+        field_value:
+          checked: '1'
+          weight: '0'
+        entity_id:
+          checked: '1'
+          weight: '0'
+        delta:
+          checked: '1'
+          weight: '0'
+        entity_revision_id:
+          checked: '1'
+          weight: '0'
+      implode_character: ''
+      hide_empty: 0
+      multiple: 0
+    third_party_settings: {  }
+    type: views_field_formatter
+    region: content
+  field_slide:
+    weight: 12
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_shop_category: true
+  langcode: true
+  search_api_excerpt: true

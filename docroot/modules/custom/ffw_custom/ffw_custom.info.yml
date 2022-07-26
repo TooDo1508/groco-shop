@@ -1,0 +1,5 @@
+name: 'ffw_custom'
+type: module
+description: 'creating module with console'
+core: 8.x
+package: 'Custom'

@@ -1,0 +1,45 @@
+uuid: b6024b3c-c993-4980-80f4-5519cb5c169d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_img_product2
+    - node.type.products
+  module:
+    - content_translation
+    - image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      alt: alt
+      title: title
+      file: '0'
+id: node.products.field_img_product2
+field_name: field_img_product2
+entity_type: node
+bundle: products
+label: img-product2
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

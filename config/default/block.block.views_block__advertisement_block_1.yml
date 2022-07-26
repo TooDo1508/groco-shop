@@ -1,0 +1,33 @@
+uuid: acf3fe99-af63-4734-a4e5-8544ad4eec15
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.advertisement
+  module:
+    - node
+    - views
+  theme:
+    - groco
+id: views_block__advertisement_block_1
+theme: groco
+region: content
+weight: -12
+provider: null
+plugin: 'views_block:advertisement-block_1'
+settings:
+  id: 'views_block:advertisement-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      blogs: blogs
+      shop: shop
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

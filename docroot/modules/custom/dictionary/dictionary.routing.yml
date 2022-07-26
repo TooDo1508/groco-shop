@@ -1,0 +1,57 @@
+# This file brings everything together. Very nifty!
+
+# Route name can be used in sevaral place (links, redirects, local actions etc.)
+entity.dictionary_term.canonical:
+  path: '/dictionary_term/{dictionary_term}'
+  defaults:
+  # Calls the view controller, defined in the annotation of the dictionary_term entity
+    _entity_view: 'dictionary_term'
+    _title: 'dictionary_term Content'
+  requirements:
+  # Calls the access controller of the entity, $operation 'view'
+    _entity_access: 'dictionary_term.view'
+
+entity.dictionary_term.collection:
+  path: '/dictionary_term/list'
+  defaults:
+  # Calls the list controller, defined in the annotation of the dictionary_term entity.
+    _entity_list: 'dictionary_term'
+    _title: 'dictionary_term List'
+  requirements:
+  # Checks for permission directly.
+    _permission: 'view dictionary_term entity'
+
+entity.dictionary.term_add:
+  path: '/dictionary_term/add'
+  defaults:
+  # Calls the form.add controller, defined in the dictionary_term entity.
+    _entity_form: dictionary_term.add
+    _title: 'Add dictionary_term'
+  requirements:
+    _entity_create_access: 'dictionary_term'
+
+entity.dictionary_term.edit_form:
+  path: '/dictionary_term/{dictionary_term}/edit'
+  defaults:
+  # Calls the form.edit controller, defined in the dictionary_term entity.
+    _entity_form: dictionary_term.edit
+    _title: 'Edit dictionary_term'
+  requirements:
+    _entity_access: 'dictionary_term.edit'
+
+entity.dictionary_term.delete_form:
+  path: '/dictionary_term/{dictionary_term}/delete'
+  defaults:
+    # Calls the form.delete controller, defined in the dictionary_term entity.
+    _entity_form: dictionary_term.delete
+    _title: 'Delete dictionary_term'
+  requirements:
+    _entity_access: 'dictionary_term.delete'
+
+entity.dictionary.term_settings:
+  path: 'admin/structure/dictionary_term_settings'
+  defaults:
+    _form: '\Drupal\dictionary\Form\TermSettingsForm'
+    _title: 'dictionary_term Settings'
+  requirements:
+    _permission: 'administer dictionary_term entity'

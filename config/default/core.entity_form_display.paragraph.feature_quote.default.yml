@@ -1,0 +1,26 @@
+uuid: d832a9c1-1e6d-443b-b688-02d6de309a88
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.feature_quote.field_image_feature
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.feature_quote
+  module:
+    - image
+id: paragraph.feature_quote.default
+targetEntityType: paragraph
+bundle: feature_quote
+mode: default
+content:
+  field_image_feature:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+hidden:
+  created: true
+  status: true

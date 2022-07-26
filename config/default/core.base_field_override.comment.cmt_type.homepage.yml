@@ -1,0 +1,18 @@
+uuid: 447c2955-dc4b-45be-bf60-14054b319bb8
+langcode: vi
+status: true
+dependencies:
+  config:
+    - comment.type.cmt_type
+id: comment.cmt_type.homepage
+field_name: homepage
+entity_type: comment
+bundle: cmt_type
+label: Homepage
+description: 'The comment author''s home page address.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: uri
