@@ -261,7 +261,29 @@ class office extends EditorialContentEntityBase implements officeInterface {
       ->setReadOnly(TRUE)
       ->setRevisionable(TRUE)
       ->setTranslatable(TRUE);
-
+    
+    $fields['city'] = BaseFieldDefinition::create('string')
+      ->setLabel(t('City'))
+      ->setDescription(t('City'))
+      ->setSettings(array(
+        'max_length' => 50,
+        'text_processing' => 0,
+      ))
+      ->setDefaultValue('')
+      ->setDisplayOptions('view', array(
+        'label' => 'above',
+        'type' => 'string',
+        'weight' => -4,
+      ))
+      ->setDisplayOptions('form', array(
+        'type' => 'field_city',
+        'weight' => -4,
+      ))
+      ->setDisplayConfigurable('form', TRUE)
+      ->setDisplayConfigurable('view', TRUE);
+    
+    
+    
     return $fields;
   }
 

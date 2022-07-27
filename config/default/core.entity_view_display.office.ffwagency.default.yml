@@ -5,8 +5,10 @@ dependencies:
   config:
     - ffw_custom.office_type.ffwagency
     - field.field.office.ffwagency.field_test
+    - field.field.office.ffwagency.field_test22
   module:
     - options
+    - text
     - user
 id: office.ffwagency.default
 targetEntityType: office
@@ -19,6 +21,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: list_default
+    region: content
+  field_test22:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
     region: content
   name:
     label: above

@@ -5,16 +5,35 @@ dependencies:
   config:
     - ffw_custom.office_type.ffwagency
     - field.field.office.ffwagency.field_test
+    - field.field.office.ffwagency.field_test22
+  module:
+    - text
 id: office.ffwagency.default
 targetEntityType: office
 bundle: ffwagency
 mode: default
 content:
+  city:
+    type: string_textfield
+    weight: -4
+    region: content
+    settings:
+      size: 80
+      placeholder: ''
+    third_party_settings: {  }
   field_test:
     weight: 26
     settings: {  }
     third_party_settings: {  }
     type: options_select
+    region: content
+  field_test22:
+    weight: 27
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
     region: content
   langcode:
     type: language_select

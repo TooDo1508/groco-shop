@@ -1,0 +1,19 @@
+uuid: 42846ea5-649c-40b7-bef5-3ceaea45443b
+langcode: en
+status: true
+dependencies:
+  module:
+    - ffw_custom
+    - text
+id: office.field_test22
+field_name: field_test22
+entity_type: office
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
