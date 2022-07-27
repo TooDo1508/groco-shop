@@ -273,11 +273,11 @@ class office extends EditorialContentEntityBase implements officeInterface {
       ->setDisplayOptions('view', array(
         'label' => 'above',
         'type' => 'string',
-        'weight' => -4,
+        'weight' => -5,
       ))
       ->setDisplayOptions('form', array(
         'type' => 'field_city',
-        'weight' => -4,
+        'weight' => -5,
       ))
       ->setDisplayConfigurable('form', TRUE)
       ->setDisplayConfigurable('view', TRUE);
