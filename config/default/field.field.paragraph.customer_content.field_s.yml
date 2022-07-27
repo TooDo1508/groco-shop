@@ -1,0 +1,21 @@
+uuid: ff6baf48-abc5-4945-996a-934e6254eaea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_s
+    - paragraphs.paragraphs_type.customer_content
+id: paragraph.customer_content.field_s
+field_name: field_s
+entity_type: paragraph
+bundle: customer_content
+label: star-customer
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: ⭐⭐⭐⭐⭐
+default_value_callback: ''
+settings: {  }
+field_type: string

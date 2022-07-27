@@ -1,14 +1,120 @@
 <?php
 
+use Drupal\views\Views;
 /**
  * @file
  * Functions to support theming in the Groco theme.
  */
 
-function groco_preprocess_page(array &$variables) {
+function groco_preprocess_pagesssss(array &$variables) {
     
 }
 
 function groco_preprocess_field__paragraph__field_link_footer__link_footer(&$vars) {
+}
+
+function groco_preprocess_menu(&$variables,$hook){
+    $items = $variables['items'];
+    if ($variables['menu_name'] == 'account'){
+        // dump($variables);
+        echo count($items);
+        // echo $variables['menu_name'];
+        // $variables['check'] = '1';
+        if (count($items) < 2){
+            echo 'abcdef';
+            $variables['check'] = 'display:none';
+
+        }
+
+        // foreach ($items as $key => $item){
+        //     if ($key == 'user.page'){
+        //         dump($items[$key]);
+        //         // dump($variables['items'][$key]);
+        //         $variables['items'][$key]['iconClass'] = 'fas fa-search';
+        //         $items[$key]['title'] = '';
+        //     }
+        // }
+    }
+}
+
+
+function groco_preprocess_links(&$variables){
+    $items = $variables['links'];
+    // dump($items);
+    foreach($items as $key => $item){
+        // dump($items[$key]);
+        if ($items[$key]['text'] == 'English'){
+            $variables['links'][$key]['iconLanguage'] = '/sites/default/files/2022-06/UK.png';
+        }
+        if ($items[$key]['text'] == 'Vietnamese'){
+            $variables['links'][$key]['iconLanguage'] = '/sites/default/files/2022-06/VN.png';
+        }
+        
+    }
+}
+
+function groco_preprocess_node(&$variables){
+    
+    $node = $variables['content'];
+    // kint($node);
+    // dump($node);
+    
+    // $variables['display'] = 'dipaly:none';
+    // dump($variables);
+    // echo $node['links'];
+    // dump($node['field_checkbox_grocosho']);
+    // dump($node['field_checkbox_grocosho']['0']);
+    // dump($node['field_checkbox_grocosho']['0']['#markup']);
+    // echo $node['field_checkbox_grocosho']['0']['#markup'];
+    if(!empty($node['field_checkbox_grocosho'])){
+    if ($node['field_checkbox_grocosho']['0']['#markup'] == 'On'){
+        // $variables['content']['field_checkbox_grocosho']['display'] == 'none';
+        $view = Views::getView('testproduct'); // id views machinename
+        $view->setDisplay('block_1'); // display block
+        $view->preExecute();
+        $view->execute();
+        $variables['abcdef'] = $view->buildRenderable();
+    }
+    }   
+    // dump($node);
+    // echo $variables['content']['field_checkbox_grocosho']['#display'];
+    // echo 123;
+    // $view = [
+    //     '#type' => 'view',
+    //     '#name' => 'test_view',
+    //     '#display_id' => 'block',
+    //     '#arguments' => [$tid],
+    //     '#embed' => TRUE,
+    // ];
+    // $args = [$tid];
+    // $view = Views::getView('testproduct');
+    // if (is_object($view)) {
+    // $view->setArguments($args);
+    // $view->setDisplay('block_1');
+    // $view->preExecute();
+    // $view->execute();
+    // $content = $view->buildRenderable('block', $args);
+    // }
+    // $view_id = $paragraph->field_view->target_id;
+    // $view = \Drupal\views\Views::getView($view_id);
+    // $view->setDisplay('embed_1');
+    // $variables['abcdef'] = $view->buildRenderable();
+    
+}
+
+
+function groco_preprocess_views_view(&$variables) {
+    // $view = $variables['view'];
+    
+    // dump($view);   
+    // // $args = $view['element']['#argument'];
+    // $views = Views::getView('testproduct');
+    // if (is_object($views)) {
+    // // $views->setArguments($args);
+    // $views->setDisplay('block');
+    // $views->preExecute();
+    // $views->execute();
+    // $content = $views->buildRenderable('block', $args);
+    // }
 }
 

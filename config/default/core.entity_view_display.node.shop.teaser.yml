@@ -1,0 +1,46 @@
+uuid: f22e1b26-5be4-4242-9254-1d742e775ec4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.shop.field_category_shop
+    - field.field.node.shop.field_img_shop
+    - field.field.node.shop.field_info_shop
+    - field.field.node.shop.field_intr
+    - field.field.node.shop.field_logo_shop
+    - field.field.node.shop.field_map
+    - field.field.node.shop.field_map_leaflet
+    - field.field.node.shop.field_map_shop_5
+    - field.field.node.shop.field_name_shop
+    - field.field.node.shop.field_products
+    - field.field.node.shop.field_shop_category
+    - field.field.node.shop.field_slide
+    - node.type.shop
+  module:
+    - user
+id: node.shop.teaser
+targetEntityType: node
+bundle: shop
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_category_shop: true
+  field_img_shop: true
+  field_info_shop: true
+  field_intr: true
+  field_logo_shop: true
+  field_map: true
+  field_map_leaflet: true
+  field_map_shop_5: true
+  field_name_shop: true
+  field_products: true
+  field_shop_category: true
+  field_slide: true
+  langcode: true
+  search_api_excerpt: true

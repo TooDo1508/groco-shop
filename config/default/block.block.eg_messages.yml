@@ -1,0 +1,22 @@
+uuid: 59459c50-c857-4753-b29e-39ab6aaf5702
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - eg
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: eg_messages
+theme: eg
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

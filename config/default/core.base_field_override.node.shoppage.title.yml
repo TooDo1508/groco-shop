@@ -1,0 +1,18 @@
+uuid: 9f9256a2-f1ee-4722-ae9e-d899ff628ed1
+langcode: vi
+status: true
+dependencies:
+  config:
+    - node.type.shoppage
+id: node.shoppage.title
+field_name: title
+entity_type: node
+bundle: shoppage
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

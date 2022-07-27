@@ -1,0 +1,23 @@
+uuid: b5b3f142-0cca-421a-a41a-ea3a45d4890d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_btn_blog
+    - node.type.blogs
+  module:
+    - link
+id: node.blogs.field_btn_blog
+field_name: field_btn_blog
+entity_type: node
+bundle: blogs
+label: btn-blog
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

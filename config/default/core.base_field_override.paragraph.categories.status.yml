@@ -1,0 +1,22 @@
+uuid: 1120a596-28b4-4292-813e-54a63e6f1373
+langcode: vi
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.categories
+id: paragraph.categories.status
+field_name: status
+entity_type: paragraph
+bundle: categories
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

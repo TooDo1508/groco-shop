@@ -1,0 +1,10 @@
+uuid: 7d94f99a-93c7-4b5b-a5f0-0c64370c32d2
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.feature_quote
+label: 'Feature Quote'
+targetEntityType: media
+cache: true

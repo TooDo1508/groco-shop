@@ -1,0 +1,23 @@
+uuid: ce3ad5bc-a248-4bd3-80a7-f019d37430aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_btn_product
+    - node.type.products
+  module:
+    - link
+id: node.products.field_btn_product
+field_name: field_btn_product
+entity_type: node
+bundle: products
+label: btn-product
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

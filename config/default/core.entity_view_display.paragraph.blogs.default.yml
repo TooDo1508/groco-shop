@@ -1,0 +1,50 @@
+uuid: 0f715e35-18bf-4084-ad21-f522886e6422
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.blogs.field_testviews
+    - field.field.paragraph.blogs.field_title_blog
+    - paragraphs.paragraphs_type.blogs
+    - views.view.blogs
+  module:
+    - views_field_formatter
+id: paragraph.blogs.default
+targetEntityType: paragraph
+bundle: blogs
+mode: default
+content:
+  field_testviews:
+    weight: 1
+    label: hidden
+    settings:
+      view: 'blogs::default'
+      arguments:
+        field_value:
+          checked: '1'
+          weight: '0'
+        entity_id:
+          checked: '1'
+          weight: '0'
+        delta:
+          checked: '1'
+          weight: '0'
+        entity_revision_id:
+          checked: '1'
+          weight: '0'
+      implode_character: ''
+      hide_empty: 0
+      multiple: 0
+    third_party_settings: {  }
+    type: views_field_formatter
+    region: content
+  field_title_blog:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  search_api_excerpt: true

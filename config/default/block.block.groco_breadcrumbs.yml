@@ -1,0 +1,22 @@
+uuid: d91728d6-3ddc-4dd5-87dd-deef83919f3a
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - groco
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: groco_breadcrumbs
+theme: groco
+region: header
+weight: -11
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

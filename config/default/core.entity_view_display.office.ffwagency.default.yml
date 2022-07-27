@@ -1,0 +1,49 @@
+uuid: ddf894a6-0db5-4869-8dff-c449f04aba12
+langcode: en
+status: true
+dependencies:
+  config:
+    - ffw_custom.office_type.ffwagency
+    - field.field.office.ffwagency.field_test
+    - field.field.office.ffwagency.field_test22
+  module:
+    - options
+    - text
+    - user
+id: office.ffwagency.default
+targetEntityType: office
+bundle: ffwagency
+mode: default
+content:
+  field_test:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_test22:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  name:
+    label: above
+    type: string
+    weight: -4
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  user_id:
+    label: hidden
+    type: author
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  search_api_excerpt: true

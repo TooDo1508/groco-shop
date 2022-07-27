@@ -1,0 +1,7 @@
+uuid: 79834f98-d21f-4ee1-b3d8-401df50510e1
+langcode: en
+status: false
+dependencies: {  }
+formId: node_groco_shop_form
+captchaType: default
+label: null

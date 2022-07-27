@@ -5,6 +5,7 @@ global-styling:
       # css/bootstrap.css: {}
       css/style.css: {}
       css/menu.css: {}
+      css/language.css: {}
       css/features.css: {}
       css/banner.css: {}
       css/slide.css: {}
@@ -23,6 +24,8 @@ global-styling:
       css/products/productviews.css: {}
       css/products/product-slide.css: {}
       css/productpage/pageviews.css: {}
+      css/shoppage/pageviews.css: {}
+      css/search-form/search.css: {}
 
       https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css: { type: external, minified: true }
       https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css: { type: external, minified: true }

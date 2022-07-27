@@ -1,0 +1,29 @@
+uuid: b810cab2-5b9c-4768-9528-9296e0631caf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_category_shop
+    - node.type.shop
+    - taxonomy.vocabulary.category
+id: node.shop.field_category_shop
+field_name: field_category_shop
+entity_type: node
+bundle: shop
+label: category-shop
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      category: category
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

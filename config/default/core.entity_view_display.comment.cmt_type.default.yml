@@ -1,0 +1,29 @@
+uuid: ac0051c6-424a-4200-b1ca-7e6de7eb3ca6
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.cmt_type
+    - field.field.comment.cmt_type.comment_body
+  module:
+    - text
+id: comment.cmt_type.default
+targetEntityType: comment
+bundle: cmt_type
+mode: default
+content:
+  comment_body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

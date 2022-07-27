@@ -1,0 +1,20 @@
+uuid: fb0c6162-840c-4c41-acbf-5bedef245909
+langcode: vi
+status: true
+dependencies:
+  config:
+    - node.type.shoppage
+id: node.shoppage.uid
+field_name: uid
+entity_type: node
+bundle: shoppage
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,22 @@
+uuid: 256904b9-89da-4a38-9a1b-e70c34b4acc7
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - yg_restaurant_lite
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: yg_restaurant_lite_breadcrumbs
+theme: yg_restaurant_lite
+region: header
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

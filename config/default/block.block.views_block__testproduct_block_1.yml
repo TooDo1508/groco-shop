@@ -1,0 +1,32 @@
+uuid: 813445e0-4661-4f51-8006-995bc225a2b0
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.testproduct
+  module:
+    - node
+    - views
+  theme:
+    - groco
+id: views_block__testproduct_block_1
+theme: groco
+region: content
+weight: -5
+provider: null
+plugin: 'views_block:testproduct-block_1'
+settings:
+  id: 'views_block:testproduct-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      shop: shop
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

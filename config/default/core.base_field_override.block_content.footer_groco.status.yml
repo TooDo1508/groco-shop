@@ -1,0 +1,22 @@
+uuid: ba74da38-6837-4309-9de7-7668f3227182
+langcode: vi
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_groco
+id: block_content.footer_groco.status
+field_name: status
+entity_type: block_content
+bundle: footer_groco
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

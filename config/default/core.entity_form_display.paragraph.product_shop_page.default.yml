@@ -1,0 +1,34 @@
+uuid: a920e42a-e8d5-48d5-a959-bb8090edd285
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.product_shop_page.field_title_product_sp
+    - field.field.paragraph.product_shop_page.field_views_pr
+    - paragraphs.paragraphs_type.product_shop_page
+id: paragraph.product_shop_page.default
+targetEntityType: paragraph
+bundle: product_shop_page
+mode: default
+content:
+  field_title_product_sp:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_views_pr:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true

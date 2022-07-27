@@ -1,0 +1,23 @@
+uuid: 39db36fa-95cf-4320-970b-37c3ade167f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_checkbox_grocosho
+    - node.type.groco_shop
+id: node.groco_shop.field_checkbox_grocosho
+field_name: field_checkbox_grocosho
+entity_type: node
+bundle: groco_shop
+label: checkbox
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

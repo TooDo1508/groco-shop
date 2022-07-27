@@ -1,0 +1,52 @@
+uuid: 8cf15e6b-6709-40e5-abc6-674976e9bb58
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.customer_content.field_content_customer
+    - field.field.paragraph.customer_content.field_img_customer
+    - field.field.paragraph.customer_content.field_name_customer
+    - field.field.paragraph.customer_content.field_s
+    - paragraphs.paragraphs_type.customer_content
+  module:
+    - image
+id: paragraph.customer_content.default
+targetEntityType: paragraph
+bundle: customer_content
+mode: default
+content:
+  field_content_customer:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_img_customer:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_name_customer:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_s:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  search_api_excerpt: true

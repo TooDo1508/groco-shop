@@ -1,0 +1,23 @@
+uuid: 243ce3b9-0116-483c-9edd-e4632693c840
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_groco
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.footer_groco.body
+field_name: body
+entity_type: block_content
+bundle: footer_groco
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

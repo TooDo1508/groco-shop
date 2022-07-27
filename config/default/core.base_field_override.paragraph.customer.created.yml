@@ -1,0 +1,18 @@
+uuid: ccac70ea-a600-4c6c-82ab-f7db77911cd3
+langcode: vi
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.customer
+id: paragraph.customer.created
+field_name: created
+entity_type: paragraph
+bundle: customer
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

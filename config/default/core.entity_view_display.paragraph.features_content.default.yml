@@ -1,0 +1,66 @@
+uuid: fc72b2f8-7cf8-437c-a288-e73ed38c8d7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.features_content.field_bt
+    - field.field.paragraph.features_content.field_cont
+    - field.field.paragraph.features_content.field_content_features
+    - field.field.paragraph.features_content.field_img_features
+    - field.field.paragraph.features_content.field_title_features_2
+    - paragraphs.paragraphs_type.features_content
+  module:
+    - image
+    - link
+    - text
+id: paragraph.features_content.default
+targetEntityType: paragraph
+bundle: features_content
+mode: default
+content:
+  field_bt:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_cont:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_content_features:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_img_features:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_title_features_2:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  search_api_excerpt: true

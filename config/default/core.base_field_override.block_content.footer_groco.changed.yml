@@ -1,0 +1,18 @@
+uuid: ca78e39e-0060-4c25-b513-c02ce053b1aa
+langcode: vi
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_groco
+id: block_content.footer_groco.changed
+field_name: changed
+entity_type: block_content
+bundle: footer_groco
+label: Changed
+description: 'The time that the custom block was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

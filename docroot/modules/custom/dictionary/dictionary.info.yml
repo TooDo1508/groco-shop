@@ -1,0 +1,5 @@
+name: dictionary
+type: module
+description: Dictionary
+core: 8.x
+package: Application

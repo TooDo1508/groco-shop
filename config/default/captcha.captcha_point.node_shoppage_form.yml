@@ -1,0 +1,7 @@
+uuid: 2f08bdbe-30f0-46a6-b265-e2a4b65b0d65
+langcode: en
+status: false
+dependencies: {  }
+formId: node_shoppage_form
+captchaType: default
+label: null

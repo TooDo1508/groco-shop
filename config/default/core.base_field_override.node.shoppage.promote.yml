@@ -1,0 +1,22 @@
+uuid: c5781b7c-88a1-43f1-8479-60cb0756be2c
+langcode: vi
+status: true
+dependencies:
+  config:
+    - node.type.shoppage
+id: node.shoppage.promote
+field_name: promote
+entity_type: node
+bundle: shoppage
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

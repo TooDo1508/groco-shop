@@ -1,0 +1,18 @@
+/* .search-item{
+    position: absolute;
+    top:20%; 
+    right:-18%;
+    width: 50rem;
+    height:5rem;
+    background: #fff;
+    border-radius: .5rem;
+    overflow: hidden;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+}
+
+.search-item .active{
+    right: 2rem;
+    transition: .4s linear;
+} */

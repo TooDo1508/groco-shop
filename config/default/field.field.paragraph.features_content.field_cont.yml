@@ -1,0 +1,19 @@
+uuid: 61208398-f606-4455-b41d-ad1ac0f462e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cont
+    - paragraphs.paragraphs_type.features_content
+id: paragraph.features_content.field_cont
+field_name: field_cont
+entity_type: paragraph
+bundle: features_content
+label: content-features
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

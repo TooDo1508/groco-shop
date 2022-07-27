@@ -1,0 +1,34 @@
+uuid: 8c9e7b21-a3ab-4e29-a6a1-ccb486ac8c98
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.blogs.field_testviews
+    - field.field.paragraph.blogs.field_title_blog
+    - paragraphs.paragraphs_type.blogs
+id: paragraph.blogs.default
+targetEntityType: paragraph
+bundle: blogs
+mode: default
+content:
+  field_testviews:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_title_blog:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

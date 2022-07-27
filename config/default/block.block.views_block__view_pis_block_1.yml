@@ -1,0 +1,33 @@
+uuid: aa858544-9f84-4585-9cee-abf633ddd033
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.view_pis
+  module:
+    - node
+    - views
+  theme:
+    - groco
+id: views_block__view_pis_block_1
+theme: groco
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'views_block:view_pis-block_1'
+settings:
+  id: 'views_block:view_pis-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      shop: shop
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

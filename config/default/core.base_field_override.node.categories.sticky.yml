@@ -1,0 +1,22 @@
+uuid: a806241d-34a1-4266-9c0e-f370a723cc90
+langcode: vi
+status: true
+dependencies:
+  config:
+    - node.type.categories
+id: node.categories.sticky
+field_name: sticky
+entity_type: node
+bundle: categories
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

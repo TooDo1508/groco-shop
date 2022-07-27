@@ -1,0 +1,25 @@
+uuid: e62b210d-9248-4469-9e37-046173b8064f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:footer_groco:118988a7-1164-4897-b8ba-d708d24c8284'
+  module:
+    - block_content
+  theme:
+    - groco
+id: newsletter
+theme: groco
+region: footer
+weight: -7
+provider: null
+plugin: 'block_content:118988a7-1164-4897-b8ba-d708d24c8284'
+settings:
+  id: 'block_content:118988a7-1164-4897-b8ba-d708d24c8284'
+  label: Newsletter
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

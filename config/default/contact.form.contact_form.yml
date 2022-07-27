@@ -1,0 +1,12 @@
+uuid: a6728004-21f6-4eca-8332-a8c2770abdca
+langcode: en
+status: true
+dependencies: {  }
+id: contact_form
+label: 'Contact Form'
+recipients:
+  - duongk52a2@gmail.com
+reply: ''
+weight: 0
+message: 'Thanks for letting us. Wish you have the best experience!'
+redirect: /success

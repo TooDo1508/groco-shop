@@ -1,0 +1,17 @@
+
+# Office menu items definition
+entity.office.collection:
+  title: 'Office list'
+  route_name: entity.office.collection
+  description: 'List Office entities'
+  parent: system.admin_structure
+  weight: 100
+
+
+# Office type menu items definition
+entity.office_type.collection:
+  title: 'Office type'
+  route_name: entity.office_type.collection
+  description: 'List Office type (bundles)'
+  parent: system.admin_structure
+  weight: 99

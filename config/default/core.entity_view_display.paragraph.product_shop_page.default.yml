@@ -1,0 +1,50 @@
+uuid: 007084ff-d04a-4d85-9694-d366403627e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.product_shop_page.field_title_product_sp
+    - field.field.paragraph.product_shop_page.field_views_pr
+    - paragraphs.paragraphs_type.product_shop_page
+    - views.view.testproduct
+  module:
+    - views_field_formatter
+id: paragraph.product_shop_page.default
+targetEntityType: paragraph
+bundle: product_shop_page
+mode: default
+content:
+  field_title_product_sp:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_views_pr:
+    weight: 1
+    label: hidden
+    settings:
+      view: 'testproduct::page_1'
+      arguments:
+        field_value:
+          checked: '1'
+          weight: '0'
+        entity_id:
+          checked: '1'
+          weight: '0'
+        delta:
+          checked: '1'
+          weight: '0'
+        entity_revision_id:
+          checked: '1'
+          weight: '0'
+      implode_character: ''
+      hide_empty: 0
+      multiple: 0
+    third_party_settings: {  }
+    type: views_field_formatter
+    region: content
+hidden:
+  search_api_excerpt: true

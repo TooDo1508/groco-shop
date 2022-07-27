@@ -1,0 +1,22 @@
+uuid: 17265df3-b526-4b00-84b8-e72acc9c6e72
+langcode: vi
+status: true
+dependencies:
+  config:
+    - node.type.shoppage
+id: node.shoppage.status
+field_name: status
+entity_type: node
+bundle: shoppage
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

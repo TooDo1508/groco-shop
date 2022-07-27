@@ -1,0 +1,18 @@
+uuid: d53ca267-8b71-4ff8-813a-bdd79693df1e
+langcode: vi
+status: true
+dependencies:
+  config:
+    - node.type.shoppage
+id: node.shoppage.changed
+field_name: changed
+entity_type: node
+bundle: shoppage
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

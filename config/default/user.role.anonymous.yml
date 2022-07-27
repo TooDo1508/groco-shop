@@ -1,0 +1,29 @@
+uuid: bf4ad5bd-ea6e-4c8c-bf1b-00df39fa2eea
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: pq_mEIu_B4widZN7Ap81iCJSjShFFdcL0jEiCi8VrDk
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'administer languages'
+  - 'search content'
+  - 'use text format restricted_html'
+  - 'view about_us revisions'
+  - 'view all revisions'
+  - 'view article revisions'
+  - 'view blogs revisions'
+  - 'view categories revisions'
+  - 'view groco_shop revisions'
+  - 'view media'
+  - 'view own unpublished content'
+  - 'view page revisions'
+  - 'view products revisions'
+  - 'view shop revisions'
+  - 'view shoppage revisions'

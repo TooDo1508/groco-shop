@@ -1,0 +1,105 @@
+# # This file brings everything together. Very nifty!
+
+# # Route name can be used in several places; e.g. links, redirects, and local
+# # actions.
+# entity.content_entity_example_contact.canonical:
+#   path: '/content_entity_example_contact/{content_entity_example_contact}'
+#   defaults:
+#   # Calls the view controller, defined in the annotation of the contact entity
+#     _entity_view: 'content_entity_example_contact'
+#     _title: 'Contact Content'
+#   requirements:
+#   # Calls the access controller of the entity, $operation 'view'
+#     _entity_access: 'content_entity_example_contact.view'
+
+# entity.content_entity_example_contact.collection:
+#   path: '/content_entity_example_contact/list'
+#   defaults:
+#   # Calls the list controller, defined in the annotation of the contact entity.
+#     _entity_list: 'content_entity_example_contact'
+#     _title: 'Contact List'
+#   requirements:
+#   # Checks for permission directly.
+#     _permission: 'view contact entity'
+
+# content_entity_example.contact_add:
+#   path: '/content_entity_example_contact/add'
+#   defaults:
+#   # Calls the form.add controller, defined in the contact entity.
+#     _entity_form: content_entity_example_contact.add
+#     _title: 'Add Contact'
+#   requirements:
+#     _entity_create_access: 'content_entity_example_contact'
+
+# entity.content_entity_example_contact.edit_form:
+#   path: '/content_entity_example_contact/{content_entity_example_contact}/edit'
+#   defaults:
+#   # Calls the form.edit controller, defined in the contact entity.
+#     _entity_form: content_entity_example_contact.edit
+#     _title: 'Edit Contact'
+#   requirements:
+#     _entity_access: 'content_entity_example_contact.edit'
+
+# entity.content_entity_example_contact.delete_form:
+#   path: '/contact/{content_entity_example_contact}/delete'
+#   defaults:
+#     # Calls the form.delete controller, defined in the contact entity.
+#     _entity_form: content_entity_example_contact.delete
+#     _title: 'Delete Contact'
+#   requirements:
+#     _entity_access: 'content_entity_example_contact.delete'
+
+# content_entity_example.contact_settings:
+#   path: 'admin/structure/content_entity_example_contact_settings'
+#   defaults:
+#     _form: '\Drupal\content_entity_example\Form\ContactSettingsForm'
+#     _title: 'Contact Settings'
+#   requirements:
+#     _permission: 'administer contact entity'
+###############
+entity.client_type.collection:
+  path: '/admin/structure/client_type'
+  defaults:
+    _entity_list: 'client_type'
+    _title: 'Client Entity'
+  requirements:
+    _permission: 'administer client types'
+################
+client.type_add:
+  path: '/admin/structure/client_type/add'
+  defaults:
+    _entity_form: 'client_type.add'
+    _title: 'Add client type'
+  requirements:
+    _permission: 'administer client types'
+
+client.type_edit:
+  path: '/admin/structure/client_type/edit'
+  defaults:
+    _entity_form: 'client_type.edit'
+    _title: 'Add client type'
+  requirements:
+    _permission: 'administer client types'
+
+# entity.paragraphs_type.edit_form:
+#   path: '/admin/structure/paragraphs_type/{paragraphs_type}'
+#   defaults:
+#     _entity_form: 'paragraphs_type.edit'
+#   requirements:
+#     _permission: 'administer paragraphs types'
+
+# entity.paragraphs_type.delete_form:
+#   path: '/admin/structure/paragraphs_type/{paragraphs_type}/delete'
+#   defaults:
+#     _entity_form: 'paragraphs_type.delete'
+#     _title: 'Delete'
+#   requirements:
+#     _permission: 'administer paragraphs types'
+
+# paragraphs.settings:
+#   path: '/admin/config/content/paragraphs'
+#   defaults:
+#     _form: '\Drupal\paragraphs\Form\ParagraphsSettingsForm'
+#     _title: 'Paragraphs settings'
+#   requirements:
+#     _permission: 'administer paragraphs settings'

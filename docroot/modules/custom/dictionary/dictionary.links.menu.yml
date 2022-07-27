@@ -1,0 +1,13 @@
+# Define the menu links for this module
+
+entity.dictionary_term.collection:
+  title: 'Content Entity Example: terms Listing'
+  route_name: entity.dictionary_term.collection
+  description: 'List terms'
+  weight: 10
+entity.dictionary_term.admin.structure.settings:
+  title: term Settings
+  description: 'Configure term entity'
+  route_name:  entity.dictionary.term_settings
+  parent: system.admin_structure
+

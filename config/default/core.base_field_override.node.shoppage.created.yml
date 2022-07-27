@@ -1,0 +1,18 @@
+uuid: bfcd6623-0efb-43e7-b1fa-bdcc1dc72b6e
+langcode: vi
+status: true
+dependencies:
+  config:
+    - node.type.shoppage
+id: node.shoppage.created
+field_name: created
+entity_type: node
+bundle: shoppage
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

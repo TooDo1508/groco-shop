@@ -1,0 +1,14 @@
+# 'delete contact entity':
+#   title: Delete entity content.
+# 'add contact entity':
+#   title: Add entity content
+# 'view contact entity':
+#   title: View entity content
+# 'edit contact entity':
+#   title: Edit entity content
+# 'administer contact entity':
+#   title: Administer settings
+
+# administer client types:
+#   title: 'Administer Paragraphs types'
+#   description: 'Allow to define the existing Paragraphs types and their Fields'

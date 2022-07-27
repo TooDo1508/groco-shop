@@ -1,0 +1,10 @@
+uuid: bc8f5efe-d5f3-4b32-b1e4-cd3f2858d91f
+langcode: en
+status: true
+dependencies: {  }
+id: product_shop_page
+label: 'Product Shop Page'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

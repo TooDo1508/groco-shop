@@ -1,0 +1,28 @@
+uuid: 8fb330b1-5dfc-41a4-98e4-124876494620
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_shop_category
+    - node.type.categories
+    - node.type.shop
+id: node.shop.field_shop_category
+field_name: field_shop_category
+entity_type: node
+bundle: shop
+label: shop-category
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      categories: categories
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

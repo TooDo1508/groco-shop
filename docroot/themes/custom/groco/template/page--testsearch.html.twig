@@ -43,7 +43,6 @@
  */
 #}
 <div class="layout-container">
-
   <header role="banner">
     {{ page.header }}
   </header>
@@ -55,10 +54,13 @@
 
   <main role="main">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
-
+    <div class="secondary-menu">
+      {{ page.secondary_menu }}
+    </div>
     <div class="layout-content">
       {{ page.content }}
     </div>
+    
 
     {% if page.sidebar_first %}
       <aside class="layout-sidebar-first" role="complementary">

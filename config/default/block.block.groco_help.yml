@@ -1,0 +1,22 @@
+uuid: a6585d85-c7a2-475e-b2cd-55be305a0370
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - groco
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: groco_help
+theme: groco
+region: content
+weight: -8
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

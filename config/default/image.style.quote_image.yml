@@ -1,0 +1,7 @@
+uuid: 8ee55bb7-f60d-4749-bd86-0b682c455668
+langcode: en
+status: true
+dependencies: {  }
+name: quote_image
+label: 'Quote Image'
+effects: {  }

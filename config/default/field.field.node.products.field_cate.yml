@@ -1,0 +1,30 @@
+uuid: 44000436-63ef-496a-af7c-3b8994e598ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cate
+    - node.type.categories
+    - node.type.products
+  module:
+    - entity_reference_revisions
+id: node.products.field_cate
+field_name: field_cate
+entity_type: node
+bundle: products
+label: categories-product
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      categories: categories
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference_revisions

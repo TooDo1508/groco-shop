@@ -1,0 +1,21 @@
+uuid: 2fe7dd88-782d-4ead-b454-04a6f5c64829
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_map_leaflet
+    - node.type.shop
+  module:
+    - geofield
+id: node.shop.field_map_leaflet
+field_name: field_map_leaflet
+entity_type: node
+bundle: shop
+label: map-leaflet
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geofield

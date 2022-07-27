@@ -1,0 +1,22 @@
+uuid: c75097fb-2c2b-468e-94ef-1d2faf935092
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - yg_restaurant_lite
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: yg_restaurant_lite_powered
+theme: yg_restaurant_lite
+region: header
+weight: 10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,18 @@
+uuid: 73386c0b-8b0a-4037-8d98-09cdd38480d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_groco
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: block_content.footer_groco
+target_entity_type_id: block_content
+target_bundle: footer_groco
+default_langcode: site_default
+language_alterable: false

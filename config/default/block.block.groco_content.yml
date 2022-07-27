@@ -1,0 +1,27 @@
+uuid: dddfcd70-a426-43eb-8ee5-e24ccfa483c0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - groco
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: groco_content
+theme: groco
+region: content
+weight: -11
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /testsearch
+    negate: false
+    context_mapping: {  }

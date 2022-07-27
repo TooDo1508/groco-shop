@@ -1,0 +1,19 @@
+uuid: 4de0c7cf-ec93-4c91-b318-c063b6213f96
+langcode: en
+status: true
+dependencies:
+  module:
+    - geomap_field
+    - node
+id: node.field_map
+field_name: field_map
+entity_type: node
+type: geomap
+settings: {  }
+module: geomap_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

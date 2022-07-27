@@ -1,0 +1,20 @@
+uuid: d3e831ff-7330-41fd-888e-3f019ef58335
+langcode: vi
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.category
+  module:
+    - text
+id: taxonomy_term.category.description
+field_name: description
+entity_type: taxonomy_term
+bundle: category
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

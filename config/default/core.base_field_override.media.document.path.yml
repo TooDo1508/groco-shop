@@ -1,0 +1,20 @@
+uuid: ccdbd813-de2a-446e-b4a4-1003f83bee7b
+langcode: vi
+status: true
+dependencies:
+  config:
+    - media.type.document
+  module:
+    - path
+id: media.document.path
+field_name: path
+entity_type: media
+bundle: document
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

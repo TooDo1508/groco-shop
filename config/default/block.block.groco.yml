@@ -1,0 +1,25 @@
+uuid: 23ec211f-2f58-47d6-aaec-bcbc574aa65f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:footer_groco:f08d8d39-abd6-4150-becd-9423e6a7b90e'
+  module:
+    - block_content
+  theme:
+    - groco
+id: groco
+theme: groco
+region: footer
+weight: -10
+provider: null
+plugin: 'block_content:f08d8d39-abd6-4150-becd-9423e6a7b90e'
+settings:
+  id: 'block_content:f08d8d39-abd6-4150-becd-9423e6a7b90e'
+  label: Groco
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

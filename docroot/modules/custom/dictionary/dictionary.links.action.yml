@@ -1,0 +1,11 @@
+# All action links for this module
+
+dictionary._term_add:
+  # Which route will be called by the link
+  route_name: entity.dictionary.term_add
+  title: 'Add term'
+
+  # Where will the link appear, defined by route name.
+  appears_on:
+    - entity.dictionary_term.collection
+    - entity.dictionary_term.canonical

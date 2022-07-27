@@ -1,0 +1,14 @@
+.view-id-testshop{
+    margin: 2rem 6%;
+}
+
+.view-id-testshop .view-content{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1.5rem;
+}
+
+.view-id-testshop .view-content .views-row{
+    background-color: #FFF;       
+}

@@ -1,0 +1,58 @@
+<?php
+
+/**
+ * @file
+ * Contains ffw_custom.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function ffw_custom_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the ffw_custom module.
+    case 'help.page.ffw_custom':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('creating module with console') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function ffw_custom_theme() {
+  $theme = [];
+  $theme['office'] = [
+    'render element' => 'elements',
+    'file' => 'office.page.inc',
+    'template' => 'office',
+  ];
+  $theme['office_content_add_list'] = [
+    'render element' => 'content',
+    'variables' => ['content' => NULL],
+    'file' => 'office.page.inc',
+  ];
+  return $theme;
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK().
+ */
+function ffw_custom_theme_suggestions_office(array $variables) {
+  $suggestions = [];
+  $entity = $variables['elements']['#office'];
+  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+  $suggestions[] = 'office__' . $sanitized_view_mode;
+  $suggestions[] = 'office__' . $entity->bundle();
+  $suggestions[] = 'office__' . $entity->bundle() . '__' . $sanitized_view_mode;
+  $suggestions[] = 'office__' . $entity->id();
+  $suggestions[] = 'office__' . $entity->id() . '__' . $sanitized_view_mode;
+  return $suggestions;
+}

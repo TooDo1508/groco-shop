@@ -1,0 +1,22 @@
+# Office routing definition
+
+entity.office.canonical:
+  route_name: entity.office.canonical
+  base_route: entity.office.canonical
+  title: 'View'
+
+entity.office.edit_form:
+  route_name: entity.office.edit_form
+  base_route: entity.office.canonical
+  title: 'Edit'
+
+entity.office.version_history:
+  route_name: entity.office.version_history
+  base_route: entity.office.canonical
+  title: 'Revisions'
+
+entity.office.delete_form:
+  route_name:  entity.office.delete_form
+  base_route:  entity.office.canonical
+  title: Delete
+  weight: 10
