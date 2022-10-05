@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * @file
+ * module file.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+
+function drupalbe_task1_theme() {
+  
+  
+
+  return array(
+    'task1_block' => array(
+        'variables' =>   array('items' => array())
+    )
+
+  );
+}

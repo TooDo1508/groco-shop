@@ -15,6 +15,7 @@ function groco_preprocess_field__paragraph__field_link_footer__link_footer(&$var
 
 function groco_preprocess_menu(&$variables,$hook){
     $items = $variables['items'];
+    // dump($items);
     if ($variables['menu_name'] == 'account'){
         // dump($variables);
         echo count($items);

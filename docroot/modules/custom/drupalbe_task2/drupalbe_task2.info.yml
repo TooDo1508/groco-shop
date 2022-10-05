@@ -1,0 +1,6 @@
+name: Drupal BE Task 2
+description: Create RestFul API to get 5 articles.
+package: Custom
+type: module
+version: 1.0
+core: 8.x

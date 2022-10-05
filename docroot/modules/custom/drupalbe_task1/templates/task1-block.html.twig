@@ -1,0 +1,55 @@
+{# 
+/**
+* @file
+* Default theme implementation to display a block.
+*
+* @see template_preprocess_block()
+*
+* @ingroup themeable
+*/
+#}
+{# {% set classes = [
+    'clear-both',
+] %}
+<div{{ attributes.addClass(classes) }}>
+    {% for value in content %}
+        <p>{{value}}</p>
+        <p>{{value[]}}</p>
+    {% endfor %}
+</div> #}
+
+
+<h4>{{ title }}</h4>
+{# <table>
+    <tr>
+        <th>Title</th>
+        <th>image</th>
+        <th>Descriptiop<th>
+    </tr>
+        {% for item in items %}
+    <tr>
+        <td>{{ item.title }}</td>    
+        <td><img src={{ item.img_art }}></img></td>
+        <td>{{ item.desc_art }}</td>
+
+    </tr>
+    <tr>
+    </tr>
+        {% endfor %}
+</table> #}
+<div class="box">
+    {% for item in items %}
+        <div class="box-title">
+            {{ item.title }}
+        </div>
+        <div class="box-img" >
+            <img width="200px" height="200px" src={{ item.img_art }}></img>
+        </div>
+        <div class="box-desc">
+            {{ item.desc_art }}
+        </div>  
+    {% endfor %}
+        <div class="box-more">
+            <a href="/view-article">More Link</a>
+        </div>
+</div>

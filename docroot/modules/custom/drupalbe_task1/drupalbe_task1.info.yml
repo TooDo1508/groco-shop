@@ -1,0 +1,6 @@
+name: Drupal BE Task 1
+description: Creates a page showing content types.
+package: Custom
+type: module
+version: 1.0
+core: 8.x
