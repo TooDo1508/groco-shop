@@ -1,0 +1,8 @@
+simple_form.simple_custom_form:
+  path: '/simple-form'
+  defaults:
+    _form: '\Drupal\simple_form\Form\SimpleForm'
+    _title: 'My First Page and Menu Item'
+  requirements:
+    _permission: 'administer paragraphs settings'
+

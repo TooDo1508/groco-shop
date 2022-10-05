@@ -1,0 +1,7 @@
+drupalbe_task1.content:
+  path: '/drupalbe_task1'
+  defaults:
+    _controller: '\Drupal\drupalbe_task1\Controller\Task1Controller::content'
+    _title: 'Views Content Article'
+  requirements:
+    _permission: 'access content'

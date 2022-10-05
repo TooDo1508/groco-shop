@@ -1,0 +1,26 @@
+# modal_form_example.form:
+#   path: '/admin/config/example_form'
+#   defaults:
+#     _form: 'Drupal\modal_form_example\Form\ExampleForm'
+#     _title: 'Example Form'
+#   requirements:
+#     _permission: 'administer site configuration'
+
+# modal_form_example.open_modal_form:
+#   path: '/admin/config/modal_form'
+#   defaults:
+#     _title: 'Modal Form'
+#     _controller: '\Drupal\modal_form_example\Controller\ModalFormExampleController::openModalForm'
+#   requirements:
+#     _permission: 'administer site configuration'
+#   options:
+#     _admin_route: TRUE
+
+
+modal_form.modal_custom_form:
+  path: '/modal_form'
+  defaults:
+    _form: '\Drupal\modal_form\Form\ModalForm'
+    _title: 'My First Page and Menu Item'
+  requirements:
+    _permission: 'administer paragraphs settings'

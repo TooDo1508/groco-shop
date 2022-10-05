@@ -1,0 +1,6 @@
+name: Modal Form
+type: module
+description: 'Modal Form module'  
+package: Custom
+version: 1.0
+core: 8.x
