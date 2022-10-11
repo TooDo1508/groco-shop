@@ -33,7 +33,7 @@ class Task1Block extends BlockBase {
     //     $values[$field_name] = $my_node->get($field_name)->value;
     // }
 
-    // dump($my_node);
+    dump($my_node);
     
     // get info content types
     $bundle_fields = \Drupal::entityManager()->getFieldDefinitions('node', 'article');
